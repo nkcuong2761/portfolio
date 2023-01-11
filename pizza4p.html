@@ -1,0 +1,275 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuong Nguyen's Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="home.css">
+  <link rel="stylesheet" type="text/css" href="workpage.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+<div class="root">
+  <header>
+    <nav class="wrapper-grid">
+      <div class="nav-container start" >
+        <a href=""><h5>About</h5></a>
+        <a href=""><h5>Resume</h5></a>
+      </div>
+      <a href="index.html"><img src="assets/icons/logo.svg"></a>
+      <div class="nav-container end">
+        <a href=""><h5>Works</h5></a>
+        <a href=""><h5>Etc.</h5></a>
+      </div>
+      <img src="assets/icons/menu.svg" id="menu-icon" onclick="openMenu()">
+    </nav>
+  </header>
+
+  <section class="work-showcase">
+    <div class="container">
+      <div class="title">
+        <h1>Pizza 4P's Restaurant</h1>
+        <h2>Case Study, Web Design, Mobile Design</h2>
+      </div>
+      <div class="para">
+        <h6>Project Overview</h6>
+        <p>This is an attempt to reimagine the famous pizza restaurant chain in Vietnam - Pizza 4P's. As a frequent customer I knew that the restaurant lack an online, user-centered service. This prompted me to do some research dedicated to create a specialized app and website that allow users to make online order and table reservation.</p>
+      </div>
+      <div class="frame-2-5">
+        <div class="para">
+          <h6>My Role</h6>
+          <p>Product Designer</p>
+        </div>
+        <div class="para">
+          <h6>Timeline</h6>
+          <p>06/22 - 07/22</p>
+        </div>
+        <div class="para">
+          <h6>Tools</h6>
+          <p>Figma, Google Suite</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-wide">
+      <img src="assets/pizza4p/mockup.png" height="700px">
+    </div>
+
+    <div class="container">
+      <div class="two-columns">
+        <div class="para">
+          <h6>Understanding The Problem</h6>
+          <p>Pizza lovers lack the time to go to the restaurant. Sometimes when they do, restaurants are crowded and mostly occupied, Customers also just can't tell that it is crowded beforehand.</p>
+        </div>
+        <div class="para">
+          <h6>The Objectives</h6>
+          <p>An online ordering and table reservations system for customers.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-wide">
+      <img src="assets/pizza4p/mockup-3.png" height="700px">
+    </div>
+
+    <div class="container">
+      <div class="para">
+        <h6>Process</h6>
+        <p>I like to have a clear process when starting a new projects, hence I need a structured framework to follow. With this study case I used a design thinking framework.</p>
+      </div>
+      <div class="img-frame">
+        <img src="assets/pizza4p/design-thinking.png" height="auto">
+        <p>by <a href="https://medium.com/swlh/how-to-use-design-thinking-in-the-ux-design-process-e33c4f11a6be">Rain Lieberman</a></p>
+      </div>
+    </div>
+
+    <div class="container new-chap">
+      <h3>— Empathize —</h3>
+    </div>
+
+    <div class="container">
+      <div class="para">
+        <h6>User research summary</h6>
+        <p>The methodology I used was qualitative. I conducted interviews to understand the users I'm designing for and their needs. There are 2 primary user groups identified through research.
+        <br> &nbsp;&nbsp;&#8226;&nbsp;&nbsp; One was working adults who don't have time to cook. Others are frequent customers at the Pizza 4P's.
+        <br> &nbsp;&nbsp;&#8226;&nbsp;&nbsp; The later user group confirmed initial assumptions about Pizza 4P's customers, but research also revealed that there are more problems included interests and challenges that make it difficult to get a table at the restaurants in-person.</p>
+      </div>
+    </div>
+
+    <div class="container new-chap">
+      <h3>— Define —</h3>
+    </div>
+
+    <div class="container">
+      <div class="para">
+        <h6>Competitive Audit</h6>
+        <p>A competitive audit is useful for understanding the user needs and pain points with existing services. I could identify the strengths of our existing competitors, and their weaknesses which I could learn from and avoid.</p>
+      </div>
+    </div>
+    <div class="container-wide" style="margin-top: -68px;">
+      <div class="img-frame">
+        <img src="assets/pizza4p/competitor.png" height="auto">
+        <p>It's always fast to use a Google Spreadsheet for researching</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="para">
+        <h6>Persona</h6>
+        <p>This type of character represents the targeted user of my solution for table reservation. It gives me a better sense on who and how will they benefit from this feature.</p>
+        <img src="assets/pizza4p/personas.png" height="auto">
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="para">
+        <h6>User Journey Map</h6>
+        <p>The goal is to <b>check restaurant availability</b> and <b>reserve a table</b> through the app.</p>
+        <img src="assets/pizza4p/user-journey.png" height="auto">
+      </div>
+    </div>
+
+    <div class="container new-chap">
+      <h3>— Ideate —</h3>
+    </div>
+
+    <div class="container">
+      <div class="para">
+        <h6>User Flow</h6>
+        <p>What about users <b>making an online ordering</b>? I will use a User Flow Chart to describe this activity.</p>
+        <img src="assets/pizza4p/user-flow.png" height="auto">
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="para">
+        <h6>Sketch</h6>
+        <p>Sketches are highly useful for brainstorming and getting my ideas out quickly. These drawings below are iterations for the Order Page in my app. I used stars to signify the different components that I feel would most suitable for the page.</p>
+        <img src="assets/pizza4p/sketch.png" height="auto">
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="para">
+        <h6>Wireframe + Low fidelity prototype</h6>
+        <p>This is an essential part in my UI design process as I want to get every idea out as basic outline. Then I can make a low fidelity prototype, with which I can carry out a usability study.</p>
+        <img src="assets/pizza4p/screenshot-1.png" height="auto">
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="para">
+        <h6>Usability Study</h6>
+        <p>I conducted a round of usability study on my first wireframe, which helped guide the designs to complete mockups.</p>
+        <p>
+          <b>Round 1 Findings:</b>
+          <br> &nbsp;&nbsp;&#8226;&nbsp;&nbsp; Users want to specify their seat preferences
+          <br> &nbsp;&nbsp;&#8226;&nbsp;&nbsp; The plus icons on the list item have no extra functionalities
+          <br> &nbsp;&nbsp;&#8226;&nbsp;&nbsp; Users want to review the restaurant they went to
+        </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="para">
+        <h6>Refining the Design</h6>
+        <p>After the first study I decided to remove the restaurant indicator. That information is irrelevant for the online ordering. I also add coupons and favourite buttons on top as it provides a nice addition to the experience.</p>
+        <img src="assets/pizza4p/refining.png" height="auto">
+        <p>I actually did another round of usability study, but this took place after I finish my mockups (don't panic I will show you my full mockup soon). After the second usability study I found out that sometimes (even though the chances are small), people coming in the diner in a group bigger than 8. The number of guests also affect the time slot, so I re-order the guest picker and change it a number input. I also found that I did not have accessibility in mind during the first iteration, show I made up for that in my refined designs.</p>
+        <img src="assets/pizza4p/refining-2.png" height="auto">
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="para">
+        <h6>Mockups</h6>
+        <p>Behold!</p>
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 24px;" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FBn3u13yiMIGHtTyV8HGnIX%2FPizza-4P's%3Fnode-id%3D1038%253A7885%26t%3DEfiV17GjnspfQgwa-1" allowfullscreen></iframe>
+        <img src="assets/pizza4p/ui-kit.png" height="auto">
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="para">
+        <h6>Website Mockups</h6>
+        <p>I approach the design with a Mobile-first process, as I believed that the majority of users prefer to use their phone when making orders and table reservation. However I cannot exclude, for example, the desk workers who do most of their task on the computer, or people who are one-time users that do not feel the need to download the 4P app. We need to make a corresponding website. For the web design process I follow the same framework: <b>Identifying problems, making wireframe and conducting usability studies, and finalizing a complete mockups.</b></p>
+        <img src="assets/pizza4p/mockup-4.png" height="auto">
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 24px;" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FBn3u13yiMIGHtTyV8HGnIX%2FPizza-4P's%3Fnode-id%3D1038%253A15892%26t%3DEfiV17GjnspfQgwa-1" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="para">
+        <h6>Prototype</h6>
+        <p>To see the prototype of the Pizza 4P's <b>app</b>, follow this link to Figma:<br>
+          <a href="https://www.figma.com/proto/Bn3u13yiMIGHtTyV8HGnIX/Pizza-4P's?page-id=0%3A1&node-id=845%3A21293&viewport=-51%2C-477%2C0.25&scaling=scale-down&starting-point-node-id=771%3A4671&show-proto-sidebar=1">Link to Mobile App Prototype</a>
+        </p>
+        <p>To see the prototype of the Pizza 4P's <b>website</b>, follow this link to Figma:<br>
+          <a href="https://www.figma.com/proto/Bn3u13yiMIGHtTyV8HGnIX/Pizza-4P's?page-id=891%3A43607&node-id=900%3A44592&viewport=293%2C-216%2C0.17&scaling=scale-down&starting-point-node-id=900%3A44592&show-proto-sidebar=1">Link to Desktop Website Prototype</a></p>
+      </div>
+    </div>
+
+    <div class="container new-chap">
+      <h3>— Summary —</h3>
+    </div>
+
+    <div class="container">
+      <div class="para">
+        <h6>Accessibility Considerations</h6>
+        <p>I did considered accessibility in my design. It's actually the first time I ever did, and I'm happy that I did this research, because one of the most important thing in user-centered design is, like its name, design a product that is for the people, a product that can be used by every type of people.</p>
+        <p>Accessibility considerations:
+          <br> &nbsp;&nbsp;&#8226;&nbsp;&nbsp; Adding alt text for screen reader
+          <br> &nbsp;&nbsp;&#8226;&nbsp;&nbsp; Add change language option (English and Vietnamese)
+          <br> &nbsp;&nbsp;&#8226;&nbsp;&nbsp; Add options for disability chairs/kid charis when making table reservation (which I did reflect in my design, yay!)</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="para">
+        <h6>Takeaways</h6>
+        <p>I learned a lot how keeping the users front and center when making design decisions is beneficial right from the start. Most of the time when you think of solutions for a smaller group of people, the solution will branch out and end up helping every users.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    <img src="assets/icons/logo-white.svg">
+    <div class="text-frame">
+      <h3 style="color: white">Feel like I would be a great fit to your team?</h3>
+      <p style="color: white">Reach out at <a><u>ckn006@bucknell.edu</u></a></p>
+    </div>
+    <div class="bottom">
+      <div class="text">
+        <p style="color: white">Made with</p>
+        <img src="assets/icons/code.svg">
+        <p style="color: white">by me</p>
+      </div>
+      <!-- <p style="color: white">Made with <span><img src="assets/icons/code.svg"></span> by me</p> -->
+      <div class="hero-links">
+        <a href="https://www.linkedin.com/in/cuong-nguyen-3186301a2/" target="_blank" class="link-icon">
+          <img src="assets/icons/linkedin-fill.svg">
+          <img src="assets/icons/linkedin.svg" style="position: absolute">
+        </a>
+        <a href="https://medium.com/@ckn006" target="_blank" class="link-icon">
+          <img src="assets/icons/medium-fill.svg">
+          <img src="assets/icons/medium.svg" style="position: absolute">
+        </a>
+        <a href="https://github.com/nkcuong2761" target="_blank" class="link-icon">
+          <img src="assets/icons/github-fill.svg">
+          <img src="assets/icons/github.svg" style="position: absolute">
+        </a>
+        <a href="https://dribbble.com/ckuong" target="_blank" class="link-icon">
+          <img src="assets/icons/dribbble-fill.svg">
+          <img src="assets/icons/dribbble.svg" style="position: absolute">
+        </a>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

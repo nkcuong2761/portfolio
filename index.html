@@ -1,0 +1,223 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuong Nguyen's Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="home.css">
+  <!-- <script src="https://cdn.jsdelivr.net/npm/less" ></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+<div id="dropdown-menu">
+  <a href=""><h5>About</h5></a>
+  <a href=""><h5>Resume</h5></a>
+  <a href=""><h5>Works</h5></a>
+  <a href=""><h5>Etc.</h5></a>
+</div>
+<div class="root">
+  <header>
+    <nav class="wrapper-grid">
+      <div class="nav-container start" >
+        <a href=""><h5>About</h5></a>
+        <a href=""><h5>Resume</h5></a>
+      </div>
+      <a href="index.html"><img src="assets/icons/logo.svg"></a>
+      <div class="nav-container end">
+        <a href=""><h5>Works</h5></a>
+        <a href=""><h5>Etc.</h5></a>
+      </div>
+      <img src="assets/icons/menu.svg" id="menu-icon" onclick="openMenu()">
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Hello! I'm Cuong.</h1>
+      <h2 id="changingText">I started designing at the age of 15</h2>
+    </div>
+    <div class="hero-intro">
+      <div>
+        <h6>You made it to my portfolio</h6>
+        <p>I'm a college student looking for opportunities in the emerging design industry. My proudest trait is my cross-disciplinary skills in both design and software development. I have experience working in prospering tech startup and doing long-term university research.</p>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="assets/hero.png">
+    </div>
+    <div class="hero-links">
+      <a href="https://www.linkedin.com/in/cuong-nguyen-3186301a2/" target="_blank" class="link-icon">
+        <img src="assets/icons/linkedin-fill.svg">
+        <img src="assets/icons/linkedin.svg" style="position: absolute">
+      </a>
+      <a href="https://medium.com/@ckn006" target="_blank" class="link-icon">
+        <img src="assets/icons/medium-fill.svg">
+        <img src="assets/icons/medium.svg" style="position: absolute">
+      </a>
+      <a href="https://github.com/nkcuong2761" target="_blank" class="link-icon">
+        <img src="assets/icons/github-fill.svg">
+        <img src="assets/icons/github.svg" style="position: absolute">
+      </a>
+      <a href="https://dribbble.com/ckuong" target="_blank" class="link-icon">
+        <img src="assets/icons/dribbble-fill.svg">
+        <img src="assets/icons/dribbble.svg" style="position: absolute">
+      </a>
+    </div>
+    <div class="hero-hustle">
+      <div>
+        <h6>Most Recent Hustle</h6>
+        <img src="assets/donut.png">
+      </div>
+    </div>
+    <div class="hero-achievement">
+      <div>
+        <h6>Achievements</h6>
+        <p>Google UX Design Certificate</p>
+        <p>Innovation Award for BizPitch Bucknell's Entrepreneur Competition</p>
+        <p>Susquehanna Valley Undergraduate Research Symposium</p>
+      </div>
+    </div>
+    <div class="hero-button">
+      <div class="button">
+        <h5>MY WORKS</h5>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 5L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M19 12L12 19L5 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="works">
+    <a class="card-work" style="background: #4B4C4F;" href="">
+      <div class="header">
+        <div class="text-frame" style="color: white;">
+          <h6>Ever News</h6>
+          <p>UX Case Study</p>
+        </div>
+        <img src="assets/icons/open.svg">
+      </div>
+      <img class="img" src="assets/evernews.png">
+    </a>
+    <a class="card-work" style="background: #F6F6F4;"  href="">
+      <div class="header">
+        <div class="text-frame" style="color: #1B1716;">
+          <h6>Social CO2</h6>
+          <p>Senior Design Project</p>
+        </div>
+        <img src="assets/icons/open.svg">
+      </div>
+      <img class="img" src="assets/socialco2.png">
+    </a>
+    <a class="card-work" style="background: #F2EEEB;" href="pizza4p.html">
+      <div class="header">
+        <div class="text-frame" style="color: #1B1716;">
+          <h6>Pizza 4P's Restaurant</h6>
+          <p>UX Case Study</p>
+        </div>
+        <img src="assets/icons/open.svg">
+      </div>
+      <img class="img" src="assets/pizza4p.png">
+    </a>
+    <a class="card-work" style="background: #E7E8E9;" href="">
+      <div class="header">
+        <div class="text-frame" style="color: #1B1716;">
+          <h6>Ready Set Fit</h6>
+          <p>Mobile Development</p>
+        </div>
+        <img src="assets/icons/open.svg">
+      </div>
+      <img class="img" src="assets/rsf.png">
+    </a>
+    <a class="card-work" style="background: #E3E5E7;" href="">
+      <div class="header">
+        <div class="text-frame" style="color: #1B1716;">
+          <h6>Alotruck</h6>
+          <p>UX Design</p>
+        </div>
+        <img src="assets/icons/open.svg">
+      </div>
+      <img class="img" src="assets/alotruck.png">
+    </a>
+    <a class="card-work" style="background: #B2B2AE;" href="">
+      <div class="header">
+        <div class="text-frame" style="color: #1B1716;">
+          <h6>Trekkrs Network</h6>
+          <p>UX Design</p>
+        </div>
+        <img src="assets/icons/open.svg">
+      </div>
+      <img class="img" src="assets/trekkrs.png">
+    </a>
+    <a class="card-work" style="background: #EAEAEB;" href="">
+      <div class="header">
+        <div class="text-frame" style="color: #1B1716;">
+          <h6>Wildlife Conservation Society</h6>
+          <p>UX Redesign</p>
+        </div>
+        <img src="assets/icons/open.svg">
+      </div>
+      <img class="img" src="assets/wcs.png">
+    </a>
+    <a class="card-work" style="background: #F2EFE6;" href="">
+      <div class="header">
+        <div class="text-frame" style="color: #1B1716;">
+          <h6>Daily Logo Challenge</h6>
+          <p>Illustration</p>
+        </div>
+        <img src="assets/icons/open.svg">
+      </div>
+      <img class="img" src="assets/dlc.jpg" style="object-position: center;">
+    </a>
+    <a class="card-work" style="background: #594842; color: white;" href="">
+      <div class="header">
+        <div class="text-frame">
+        </div>
+        <img src="assets/icons/open.svg">
+      </div>
+      <div class="other-works">
+        <h4>OTHER WORKS (ETC.)</h4>
+      </div>
+    </a>
+  </section>
+
+  <footer>
+    <img src="assets/icons/logo-white.svg">
+    <div class="text-frame">
+      <h3 style="color: white">Feel like I would be a great fit to your team?</h3>
+      <p style="color: white">Reach out at <a><u>ckn006@bucknell.edu</u></a></p>
+    </div>
+    <div class="bottom">
+      <div class="text">
+        <p style="color: white">Made with</p>
+        <img src="assets/icons/code.svg">
+        <p style="color: white">by me</p>
+      </div>
+      <!-- <p style="color: white">Made with <span><img src="assets/icons/code.svg"></span> by me</p> -->
+      <div class="hero-links">
+        <a href="https://www.linkedin.com/in/cuong-nguyen-3186301a2/" target="_blank" class="link-icon">
+          <img src="assets/icons/linkedin-fill.svg">
+          <img src="assets/icons/linkedin.svg" style="position: absolute">
+        </a>
+        <a href="https://medium.com/@ckn006" target="_blank" class="link-icon">
+          <img src="assets/icons/medium-fill.svg">
+          <img src="assets/icons/medium.svg" style="position: absolute">
+        </a>
+        <a href="https://github.com/nkcuong2761" target="_blank" class="link-icon">
+          <img src="assets/icons/github-fill.svg">
+          <img src="assets/icons/github.svg" style="position: absolute">
+        </a>
+        <a href="https://dribbble.com/ckuong" target="_blank" class="link-icon">
+          <img src="assets/icons/dribbble-fill.svg">
+          <img src="assets/icons/dribbble.svg" style="position: absolute">
+        </a>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
