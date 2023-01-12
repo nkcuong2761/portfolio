@@ -6,7 +6,34 @@
   height: 320px;
 }
 
-@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 1024px) {
+  .work-showcase {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  } .work-showcase .container, .work-showcase .container-wide {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    gap: 48px;
+  } .work-showcase .frame-2-5, .work-showcase .two-columns {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  } .work-showcase .two-columns .card-work {
+    align-self: stretch;
+    flex-grow: 1;
+  } .work-showcase .img {
+    margin-top: 12px;
+    object-fit: cover;
+    border-radius: 20px;
+    align-self: stretch;
+    width: 100%;
+  } .work-showcase .new-chap {
+    align-items: center;
+    text-align: center;
+  }
+}
 
 @media screen and (min-width: 1024px) {
   .work-showcase {
