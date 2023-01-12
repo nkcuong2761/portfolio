@@ -14,7 +14,7 @@ body {
   background-color: white;
   font-family: 'Sora', sans-serif;
 }
-.button, .nav-logo, footer #logo, .link-icon, a {
+.button, .nav-logo, footer #logo, .link-icon, a, svg {
   transition: 0.2s;
 }
 
@@ -90,6 +90,13 @@ header {
   height: 60px;
   margin-top: 48px;
   color: var(--black);
+} header svg {
+  color: var(--dark-brown);
+  width: 48px;
+  height: 48px;
+} header svg:hover, footer svg:hover {
+  cursor: pointer;
+  color: var(--blue);
 }
 nav ul {
   list-style: none;
@@ -282,6 +289,11 @@ nav ul {
   /* Inside auto layout */
   align-self: stretch;
   flex-grow: 1;
+} .card-work.etc {
+  color: white;
+  background: var(--dark-brown);
+} .card-work.etc:hover {
+  background: var(--brown)
 }
 
 /* FOOTER */
@@ -316,6 +328,10 @@ footer {
 } footer .bottom .hero-links img {
   height: 48px;
   width: 48px;
+} footer svg {
+  color: var(--beige);
+  width: 60px;
+  height: 60px;
 }
 
 /* MEDIA QUERIES */

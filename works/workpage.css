@@ -2,6 +2,10 @@
   display: grid;
 }
 
+.card-work {
+  height: 320px;
+}
+
 @media screen and (max-width: 1024px) {}
 
 @media screen and (min-width: 1024px) {
@@ -46,21 +50,22 @@
     align-items: flex-start; */
     padding: 0px;
     align-self: stretch;
-  } .work-showcase .container-wide img {
+  } .work-showcase .container-wide .img {
     object-fit: cover;
     align-self: stretch;
     width: 100%;
     border-radius: 40px;
-  }  .work-showcase .container img {
+  } .work-showcase .container .img {
     object-fit: cover;
     align-self: stretch;
     width: 100%;
     border-radius: 24px;
-    padding-top: 12px;
+    margin-top: 12px;
   } .work-showcase .two-columns {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: var(--gutter);
+    align-self: stretch;
   } .work-showcase .img-frame {
     display: flex;
     align-self: stretch;

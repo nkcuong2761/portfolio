@@ -41,7 +41,7 @@ const textArray = [
   "I'm a UX Designer who can do SDE",
   "I prefer finding the right problem than solving it",
   "One Piece is the best manga ever",
-  "I want to start my own company one day",
+  "I will start my own company one day",
   "I love playing boardgames and TCGs",
 ]
 console.log(textArray[7])
