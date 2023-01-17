@@ -1,9 +1,63 @@
+/* ETC PAGE */
+.works .img-only {
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+} .works .img-only img {
+  align-self: stretch;
+  flex-grow: 1;
+  width: 100%;
+} .works .img-cover {
+  object-fit: cover;
+} .works .img-contain {
+  object-fit: contain;
+  object-position: center;
+} .works.etc .gc1r1 {
+  grid-column: span 1;
+  grid-row: span 1;
+} .works.etc .gc1r2 {
+  grid-column: span 1;
+  grid-row: span 2;
+} .works.etc .gc2r3 {
+  grid-column: span 2;
+  grid-row: span 3;
+}
+
+/* WORK PAGE */
 .work-showcase {
   display: grid;
 }
 
 .card-work {
-  height: 320px;
+  height: 360px;
+}
+.brown {
+  color: var(--brown);
+}
+
+table {
+  border-spacing: 0px;
+  /* border-collapse: separate; */
+  border-radius: 12px;
+  border: 1px solid var(--black);
+} table tr:first-child th:first-child {
+  border-top-left-radius: 12px;
+} table tr:first-child th:last-child {
+  border-top-right-radius: 12px;
+} table tr:last-child td:first-child {
+  border-bottom-left-radius: 12px;
+} table tr:last-child td:last-child {
+  border-bottom-right-radius: 12px;
+} th, td {
+  padding: 10px;
+  border: 1px solid var(--black);
+} th {
+  font-weight: 600;
+}
+
+.work-showcase .container a, .work-showcase .container-wide a {
+  text-decoration: underline; 
 }
 
 @media screen and (max-width: 1024px) {
@@ -43,6 +97,12 @@
     row-gap: 96px;
     padding-bottom: 96px;
   } 
+  .work-showcase .grid-1-3 {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);
+    column-gap: var(--gutter);
+    grid-template-rows: auto;
+  }
   .work-showcase .container {
     grid-column: 2 / span 4;
     display: flex;
@@ -54,6 +114,8 @@
   } .work-showcase .container-wide {
     grid-column: 1 / span 6;
     display: flex;
+    flex-direction: column;
+    gap: 60px;
   }
   .work-showcase .title {
     display: flex;
@@ -101,11 +163,16 @@
     padding: 0px;
     gap: 8px;
     text-align: center;
-  } .work-showcase a {
-    text-decoration: underline;
   } .work-showcase .new-chap {
     display: flex;
     align-items: center;
     text-align: center;
+  }
+
+  .works.etc {
+    grid-auto-rows: 320px;
+  } .works.etc > * {
+    width: 100%;
+    height: 100%;
   }
 }
