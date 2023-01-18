@@ -10,9 +10,13 @@
   <link rel="stylesheet" type="text/css" href="/home.css">
   <link rel="stylesheet" type="text/css" href="workpage.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <script src="/script.js" defer></script>
 </head>
 <body>
+<div id="loader">
+  <lottie-player src="/assets/preloader.json" background="white" speed="1" style="width: 100px; height: 100px;" loop autoplay id="gif"></lottie-player>
+</div>
 <div id="dropdown-menu">
   <a href=""><h5>About</h5></a>
   <a href="/assets/resume-Cuong-Nguyen.pdf" target="_blank"><h5>Resume</h5></a>
