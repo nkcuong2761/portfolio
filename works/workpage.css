@@ -60,6 +60,10 @@ table {
   text-decoration: underline; 
 }
 
+.iframe {
+  align-self: stretch;
+}
+
 @media screen and (max-width: 1024px) {
   .work-showcase {
     display: flex;
