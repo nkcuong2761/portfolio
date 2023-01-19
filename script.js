@@ -64,18 +64,18 @@ setInterval(function() {
 //     } else {
 //         loader.style.opacity = opacity;
 //         window.setTimeout(function() {
-//             loadNow(opacity - 0.05);
-//         }, 50);
+//             loadNow(opacity - 0.1);
+//         }, 500);
 //     }
 // }
 // function displayContent() {
 //     loader.style.display = 'none';
 // }
-// document.addEventListener("DOMContentLoaded", function() {
-//     loader = document.getElementById('loader');
-//     loadNow(1);
-// });
-
-$(window).on('load', function () {
-  $('#loader').fadeOut(500);
-}) 
+document.addEventListener("DOMContentLoaded", function() {
+    // loader = document.getElementById('loader');
+    // loadNow(1);
+  $('#loader').show().delay(1000).fadeOut(500);
+});
+// $(window).on('load', function () {
+//   $('#loader').fadeOut(500);
+// })
