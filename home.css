@@ -188,17 +188,29 @@ nav ul {
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
-}
+} 
 
 .hero-img {
   /* background: url(assets/hero.png) no-repeat;
   background-size: 100%; */
-  overflow: visible;
+  overflow: hidden;
   text-align: center;
+  position: relative;
 } .hero-img img {
   object-fit: contain;
   max-width: 100%;
   max-height: 100%;
+} .hero-img .overlay {
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: white;
+  position: absolute;
+  
+  animation: scaleDown 1s forwards 1s;
+  -webkit-animation: scaleDown 1.5s forwards 1s;
+  transform-origin: center bottom;
 }
 
 .hero-links {
@@ -518,5 +530,30 @@ footer {
   }
   .root {
     padding: 0 var(--margin);
+  }
+}
+ 
+@keyframes overlay {
+  0% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(0);
+  }
+}
+
+@keyframes scaleDown {
+  from {
+    transform: translateY(0%) scaleY(1);
+  }
+  to {
+    transform: translateY(50%) scaleY(0.5);
+  }
+}@-webkit-keyframes scaleDown {
+  from {
+    transform: translateY(0%) scaleY(1);
+  }
+  to {
+    transform: translateY(50%) scaleY(0.5);
   }
 }
