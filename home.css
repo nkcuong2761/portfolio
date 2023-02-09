@@ -225,6 +225,7 @@ nav ul {
   position: relative;
   top: 0;
   left: 0;
+  /* aspect-ratio: auto 60 / 60; */
 }
 
 .hero-hustle, .hero-button {
@@ -311,6 +312,7 @@ nav ul {
   object-fit: cover;
   height: 0;
   object-position: top;
+  aspect-ratio: auto 428 / 284;
   /* ANIMATION */
   transition: 0.3s ease-in-out;
 } .card-work .other-works {

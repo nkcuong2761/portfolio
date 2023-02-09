@@ -44,11 +44,11 @@ const textArray = [
   "I will start my own company one day",
   "I love playing boardgames and TCGs",
 ]
-console.log(textArray[7])
+// console.log(textArray[7])
 var index = 0
 var len = textArray.length
 setInterval(function() {
-  console.log(index)
+  // console.log(index)
   heading.fadeOut(220, function() {
     heading.text(textArray[index]).fadeIn(220)
   })
