@@ -36,7 +36,7 @@ var heading = $('#changingText')
 // console.log(heading.text())
 const textArray = [
   "I started designing at the age of 15",
-  "My hometown is half across the world from the US",
+  "My hometown is halfway across the world from the US",
   "My second home is the gym",
   "I'm a UX Designer who can do SDE",
   "I prefer finding the right problem than solving it",
