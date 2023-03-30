@@ -3,27 +3,32 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cuong Nguyen's Portfolio</title>
+  <title>Trekkrs Network</title>
+  <link rel="icon" href="/assets/icons/logo-fill.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/home.css">
   <link rel="stylesheet" type="text/css" href="workpage.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <script src="/script.js" defer></script>
 </head>
 <body>
+<div id="loader">
+  <lottie-player src="/assets/preloader.json" background="white" speed="1" style="width: 100px; height: 100px;" loop autoplay id="gif"></lottie-player>
+</div>
 <div id="dropdown-menu">
-  <a href=""><h5>About</h5></a>
+  <a href="/about.html"><h5>About</h5></a>
   <a href="/assets/resume-Cuong-Nguyen.pdf" target="_blank"><h5>Résume</h5></a>
-  <a href=""><h5>Etc.</h5></a>
+  <a href="/etc.html"><h5>Etc.</h5></a>
   <a href="#footer"><h5>Contact</h5></a>
 </div>
 <div class="root">
   <header>
     <nav class="wrapper-grid">
       <div class="nav-container start" >
-        <a href=""><h5>About</h5></a>
+        <a href="/about.html"><h5>About</h5></a>
         <a href="/assets/resume-Cuong-Nguyen.pdf" target="_blank"><h5>Résume</h5></a>
       </div>
       <a href="/index.html" aria-label="home">
@@ -33,7 +38,7 @@
         </svg>        
       </a>
       <div class="nav-container end">
-        <a href=""><h5>Etc.</h5></a>
+        <a href="/etc.html"><h5>Etc.</h5></a>
         <a href="#footer"><h5>Contact</h5></a>
       </div>
       <img src="/assets/icons/menu.svg" id="menu-icon" onclick="openMenu()">
@@ -43,27 +48,35 @@
   <section class="work-showcase">
     <div class="container">
       <div class="title">
-        <h1>Title</h1>
-        <h2>Description</h2>
+        <h1>Trekkrs Network</h1>
+        <h2>Web UI Design</h2>
       </div>
       <div class="para">
         <h6>Project Overview</h6>
-        <p>something something</p>
+        <p>This is one of the main project I did for the first UX Design job I had at a Vietnamese startup. Trekkrs is a B2B SAAS project, a community platform for South East Asian startups to connect with Venture Capitalists. </p>
       </div>
       <div class="frame-2-5">
         <div class="para">
           <h6>My Role</h6>
-          <p>something</p>
+          <p>UX Designer</p>
         </div>
         <div class="para">
           <h6>Timeline</h6>
-          <p>somewhen</p>
+          <p>08/20 - 12/20</p>
         </div>
         <div class="para">
           <h6>Tools</h6>
-          <p>something</p>
+          <p>Figma, Adobe Suite</p>
         </div>
       </div>
+    </div>
+
+    <div class="container-wide" style="gap: 0;">
+      <img class="img-cover" src="/assets/trekkrs/Frame 270.webp">
+      <img class="img-cover" src="/assets/trekkrs/Frame 275.webp">
+      <img class="img-cover" src="/assets/trekkrs/Frame 276.webp">
+      <img class="img-cover" src="/assets/trekkrs/Frame 277.webp">
+      <img class="img-cover" src="/assets/trekkrs/Frame 285.webp">
     </div>
 
     <div class="container new-chap">
@@ -74,25 +87,25 @@
       <div class="para">
         <h3>Read another one, my treat!</h3>
         <div class="two-columns">
-          <a class="card-work" style="background: #E7E8E9;text-decoration: none;" href="rsf.html">
+          <a class="card-work" style="background: #F2EEEB; text-decoration: none;" href="/works/pizza4p.html">
+            <div class="header">
+              <div class="text-frame">
+                <h6>Pizza 4P's Restaurant</h6>
+                <p>UX Case Study</p>
+              </div>
+              <img src="/assets/icons/open-here.svg" width="48" height="48" alt="open in this tab">
+            </div>
+            <img class="img" src="/assets/pizza4p.webp" alt="mockups image of the pizza 4p's web/app">
+          </a>
+          <a class="card-work" style="background: #E7E8E9; text-decoration: none;" href="rsf.html">
             <div class="header">
               <div class="text-frame" style="color: #1B1716;">
                 <h6>Ready Set Fit</h6>
                 <p>Mobile Development</p>
               </div>
-              <img src="/assets/icons/open.svg" alt="open in another site">
+              <img src="/assets/icons/open-here.svg" alt="open in this tab">
             </div>
-            <img class="img" src="/assets/rsf.png" alt="mockups image of the ready set fit app">
-          </a>
-          <a class="card-work" style="background: #E3E5E7;text-decoration: none;" href="alotruck.html">
-            <div class="header">
-              <div class="text-frame" style="color: #1B1716;">
-                <h6>Alotruck</h6>
-                <p>UX Design</p>
-              </div>
-              <img src="/assets/icons/open.svg" alt="open in another site">
-            </div>
-            <img class="img" src="/assets/alotruck.png">
+            <img class="img" src="/assets/rsf.webp" alt="mockups image of the ready set fit app">
           </a>
         </div>
       </div>
@@ -119,20 +132,20 @@
       <!-- <p style="color: white">Made with <span><img src="/assets/icons/code.svg" alt="code" width="22" height="17"></span> by me</p> -->
       <div class="hero-links">
         <a href="https://www.linkedin.com/in/cuong-nguyen-3186301a2/" target="_blank" class="link-icon" aria-label="LinkedIn">
-          <img src="/assets/icons/linkedin-fill.svg" alt="linkedin icon" width="60" height="60">
-          <img src="/assets/icons/linkedin.svg" style="position: absolute" alt="linkedin icon" width="60" height="60">
+          <img src="/assets/icons/linkedin-fill.svg" alt="linkedin icon">
+          <img src="/assets/icons/linkedin.svg" style="position: absolute" alt="linkedin icon">
         </a>
         <a href="https://medium.com/@ckn006" target="_blank" class="link-icon" aria-label="Medium">
-          <img src="/assets/icons/medium-fill.svg" alt="medium icon" width="60" height="60">
-          <img src="/assets/icons/medium.svg" style="position: absolute" alt="medium icon" width="60" height="60">
+          <img src="/assets/icons/medium-fill.svg" alt="medium icon">
+          <img src="/assets/icons/medium.svg" style="position: absolute" alt="medium icon">
         </a>
         <a href="https://dribbble.com/ckuong" target="_blank" class="link-icon" aria-label="Dribbble">
-          <img src="/assets/icons/dribbble-fill.svg" alt="dribbble icon" width="60" height="60">
-          <img src="/assets/icons/dribbble.svg" style="position: absolute" alt="dribbble icon" width="60" height="60">
+          <img src="/assets/icons/dribbble-fill.svg" alt="dribbble icon">
+          <img src="/assets/icons/dribbble.svg" style="position: absolute" alt="dribbble icon">
         </a>
         <a href="https://github.com/nkcuong2761" target="_blank" class="link-icon" aria-label="Github">
-          <img src="/assets/icons/github-fill.svg" alt="github icon" width="60" height="60">
-          <img src="/assets/icons/github.svg" style="position: absolute" alt="github icon" width="60" height="60">
+          <img src="/assets/icons/github-fill.svg" alt="github icon">
+          <img src="/assets/icons/github.svg" style="position: absolute" alt="github icon">
         </a>
       </div>
     </div>
