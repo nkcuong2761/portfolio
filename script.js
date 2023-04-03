@@ -36,13 +36,12 @@ var heading = $('#changingText')
 // console.log(heading.text())
 const textArray = [
   "I started designing at the age of 15",
-  "My hometown is halfway across the world from the US",
+  "I'm a Product Designer who can do SDE",
   "My second home is the gym",
-  "I'm a UX Designer who can do SDE",
   "I prefer finding the right problem than solving it",
   "One Piece is the best manga ever",
   "I will start my own company one day",
-  "I love playing boardgames and TCGs",
+  "I always love playing boardgames and TCGs",
 ]
 // console.log(textArray[7])
 var index = 0
