@@ -13,6 +13,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" defer></script>
   <script src="/script.js" defer></script>
+  <script src="/works/outlines.js" defer></script>
 </head>
 <body>
 <div id="loader">
@@ -25,7 +26,7 @@
   <a href="#footer"><h5>Contact</h5></a>
 </div>
 <div class="root">
-  <header>
+  <header id="header">
     <nav class="wrapper-grid">
       <div class="nav-container start" >
         <a href="/about.html"><h5>About</h5></a>
@@ -45,13 +46,24 @@
     </nav>
   </header>
 
+  <div class="side-bar">
+    <a href="#overview" id="outline-overview">Overview</a>
+    <a href="#understanding" id="outline-understanding">Understanding</a>
+    <a href="#mockups" id="outline-mockups">Mockups</a>
+    <a href="#outcome" id="outline-outcome">Outcome</a>
+    <a href="#header" id="back-to-top">
+      Back to Top
+      <img src="/assets/icons/arrow-up.svg"/>
+    </a>
+  </div>
+
   <section class="work-showcase">
-    <div class="container">
+    <div class="container opening">
       <div class="title">
         <h1>Ready Set Fit</h1>
         <h2>Web Design, Illustration, Software Development</h2>
       </div>
-      <div class="para">
+      <div class="para" id="overview">
         <h6>Project Overview</h6>
         <p>I got to know about this project when I started my first summer research with my professor at my university, and has been working on it since.</p>
         <p>Ready, Set, Fit is a years-long project created by a group of faculty, staff, and students at Bucknell. The app promotes physical fitness and exercise in the community through the use of crowdsourced public-facing humanities content of local interest.</p>
@@ -77,7 +89,7 @@
     </div>
 
     <div class="container">
-      <div class="para">
+      <div class="para" id="understanding">
         <h6>Understanding The Problem</h6>
         <p>The above image you just saw was not the state of the app when I first came into the project. Ready Set Fit (RSF) had a much different UI 2 years ago, with less customized icon, plain interface and no illustration. But it was not about that lack of 🌟sparkling elements that made me rethink the design. Let me demonstrate.</p>
       </div>
@@ -103,7 +115,7 @@
 
     <div class="container">
       <div class="para">
-        <h6>Developing Mockups + Prototypes</h6>
+        <h6 id="mockups">Developing Mockups + Prototypes</h6>
         <p>I want to keep the main user flow and layouts the same so as not to confuse the current users.</p>
         <div class="two-columns">
           <img class="img" src="/assets/rsf/Frame 6.webp" alt="new version of the home screen">
@@ -119,7 +131,7 @@
     </div>
 
     <div class="container">
-      <div class="para">
+      <div class="para" id="outcome">
         <h6>Project Outcome</h6>
         <p>Since it is my summer research, I'm also in charge of implementing the new design into the app. The frontend development process was exhilarating. It's worth noting that I have a little experience with Android developement before, but zero experience on the iOS side. Since there were previous student developers, I had to familiarize myself with the existing code before beginning any work on the project. From this experience, I learned how important it is to comment code and document your work for the benefit of future developers. On the community and business side of the project, I've witnessed how important communication is among project groups. It is important that each person involved understands the goals and plans for the project. Having a passion for the project you are working on also benefits everyone involved. I have had the opportunity to witness the devotion the RSF team has to improving the health of the surrounding community, and this makes a huge difference when it comes to the success of the project.</p>
         <div class="img-frame">

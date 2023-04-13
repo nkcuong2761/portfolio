@@ -13,6 +13,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <script src="/script.js" defer></script>
+  <script src="/works/outlines.js" defer></script>
 </head>
 <body>
 <div id="loader">
@@ -25,7 +26,7 @@
   <a href="#footer"><h5>Contact</h5></a>
 </div>
 <div class="root">
-  <header>
+  <header id="header">
     <nav class="wrapper-grid">
       <div class="nav-container start" >
         <a href="/about.html"><h5>About</h5></a>
@@ -44,9 +45,16 @@
       <img src="/assets/icons/menu.svg" id="menu-icon" onclick="openMenu()">
     </nav>
   </header>
+
+  <div class="side-bar">
+    <a href="#header" id="back-to-top">
+      Back to Top
+      <img src="/assets/icons/arrow-up.svg"/>
+    </a>
+  </div>
   
   <section class="work-showcase">
-    <div class="container">
+    <div class="container opening">
       <div class="title">
         <h1>Trekkrs Network</h1>
         <h2>Web UI Design</h2>

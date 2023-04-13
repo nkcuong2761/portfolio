@@ -1,6 +1,6 @@
 /* ETC PAGE */
 .works .img-only {
-  border-radius: 20px;
+  border-radius: 12px;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -25,6 +25,29 @@
 }
 
 /* WORK PAGE */
+.side-bar {
+  flex-direction: column;
+  gap: 12px;
+  position: fixed;
+  width: 120px;
+  top: 50%;
+  transform: translateY(-50%);
+} .side-bar a {
+  opacity: 50%;
+} .side-bar a:hover, .side-bar .in-view {
+  color: inherit;
+  opacity: 100%;
+  text-decoration: underline;
+  outline: none;
+} .side-bar a:focus {
+  color: inherit;
+} .side-bar #back-to-top {
+  padding-top: 12px;
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+
 .work-showcase {
   display: grid;
 }
@@ -58,6 +81,8 @@ table {
 
 .work-showcase .container a, .work-showcase .container-wide a {
   text-decoration: underline; 
+} .work-showcase .container.new-chap, .work-showcase .container.opening{
+  padding-top: 64px;
 }
 
 .iframe {
@@ -65,6 +90,10 @@ table {
 }
 
 @media screen and (max-width: 1024px) {
+  .side-bar {
+    display: none;
+  }
+
   .work-showcase {
     display: flex;
     flex-direction: column;
@@ -84,7 +113,7 @@ table {
   } .work-showcase .img {
     margin-top: 12px;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 12px;
     align-self: stretch;
     width: 100%;
   } .work-showcase .new-chap {
@@ -94,6 +123,11 @@ table {
 }
 
 @media screen and (min-width: 1024px) {
+  .side-bar {
+    display: flex;
+    right: 0;
+  }
+
   .work-showcase {
     grid-template-columns: repeat(6, minmax(0, 1fr));
     grid-template-rows: auto;
@@ -114,9 +148,9 @@ table {
     align-items: flex-start;
     padding: 0px;
     gap: 60px;
-    padding-top: 64px;
+    /* padding-top: 32px; */
   } .work-showcase .container-wide {
-    grid-column: 1 / span 6;
+    grid-column: 2 / span 4;
     display: flex;
     flex-direction: column;
     gap: 60px;
@@ -147,17 +181,17 @@ table {
     object-fit: cover;
     align-self: stretch;
     width: 100%;
-    border-radius: 40px;
+    border-radius: 20px;
   } .work-showcase .container .img {
     object-fit: cover;
     align-self: stretch;
     width: 100%;
-    border-radius: 24px;
+    border-radius: 20px;
     margin-top: 12px;
   } .work-showcase .two-columns {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: var(--gutter);
+    gap: 60px;
     align-self: stretch;
   } .work-showcase .img-frame {
     display: flex;
@@ -178,5 +212,11 @@ table {
   } .works.etc > * {
     width: 100%;
     height: 100%;
+  }
+}
+
+@media screen and (min-width: 1372px) {
+  .side-bar {
+    right: var(--margin);
   }
 }

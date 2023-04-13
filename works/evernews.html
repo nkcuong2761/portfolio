@@ -7,12 +7,13 @@
   <link rel="icon" href="/assets/icons/logo-fill.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sora:wght@300;350;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/home.css">
   <link rel="stylesheet" type="text/css" href="workpage.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" defer></script>
   <script src="/script.js" defer></script>
+  <script src="/works/outlines.js" defer></script>
 </head>
 <body>
 <div id="loader">
@@ -25,7 +26,7 @@
   <a href="#footer" aria-label="Contact"><h5>Contact</h5></a>
 </div>
 <div class="root">
-  <header>
+  <header id="header">
     <nav class="wrapper-grid">
       <div class="nav-container start" >
         <a href="/about.html"><h5>About</h5></a>
@@ -45,15 +46,29 @@
     </nav>
   </header>
   
+  <div class="side-bar">
+    <a href="#overview" id="outline-overview">Overview</a>
+    <a href="#explore" id="outline-explore">Explore (skippable)</a>
+    <a href="#research" id="outline-research">Research</a>
+    <a href="#proposal" id="outline-proposal">Proposal</a>
+    <a href="#story" id="outline-story">User Story</a>
+    <a href="#details" id="outline-details">Details</a>
+    <a href="#summary" id="outline-summary">Summary</a>
+    <a href="#header" id="back-to-top">
+      Back to Top
+      <img src="/assets/icons/arrow-up.svg"/>
+    </a>
+  </div>
+
   <section class="work-showcase">
-    <div class="container">
+    <div class="container opening">
       <div class="title">
         <h1>Ever News</h1>
         <h2>UX Research, Mobile Design</h2>
       </div>
-      <div class="para">
+      <div class="para" id="overview">
         <h6>Project Overview</h6>
-        <p>This was the result of my Independent Study during the Fall semester in my senior year. Ever News is a Vietnamese-based independent news platform. More than just a compilation of articles on each major story, Ever News gives readers insights and analysis on the potential bias of each source.</p>
+        <p>This was the result of my Independent Study during the Fall semester of my senior year. Ever News is a Vietnamese-based independent news platform. More than just a compilation of articles on each major story, Ever News gives readers insights and analysis on the potential bias of each source.</p>
       </div>
       <div class="frame-2-5">
         <div class="para">
@@ -72,23 +87,23 @@
     </div>
 
     <div class="container-wide">
-      <img class="img" src="/assets/evernews/Dribble Shot.webp" height="813" width="1299" alt="mockups picture of the Ever News app, showing 3 pages: Vietnam news tab, Worldwide news tab, and article reading screen">
+      <img class="img" src="/assets/evernews/Dribble Shot.webp" height="600" width="1299" alt="mockups picture of the Ever News app, showing 3 pages: Vietnam news tab, Worldwide news tab, and article reading screen">
     </div>
 
     <div class="container">
       <div class="para">
-        <h6>Foreword</h6>
-        <p>Honestly, it had been a wild experience for me with this one. Coming into this, I had little to nothing in mind, and yet the outcome was more than satisfying. The presentation that you will see below is not going to be one of those conventional case studies. Rather, I want to go in-depth into the problem-defining phase, as it was the most important and memorable part of the design process.</p>
+        <h6>Foreword ( IMPORTANT !! )</h6>
+        <p>Before going into this, I want to point out that the next section might seem unorthodox. In this project, I've included an <b>Explore</b> section where I talked about the journey before I got to my final idea. If you came to learn about the design process of Ever News, I recommend you skip this part and go straight to the <b>Proposal</b> section.</p>
       </div>
     </div>
 
-    <div class="container new-chap">
-      <h3>— Empathize —</h3>
+    <div class="container new-chap" id="explore">
+      <h3>— Explore —</h3>
     </div>
 
     <div class="container">
       <div class="para">
-        <h6>User Research</h6>
+        <h6>Getting started</h6>
         <p>Just straight up coming up with a problem to solve was unrealistic. “Started off with some small ideas and continued conducting research for each of them, thus finding the right problem would be faster,” was what I should have done. I learned this the hard way.</p>
       </div>
     </div>
@@ -96,13 +111,7 @@
     <div class="container">
       <div class="para">
         <h6>First Idea</h6>
-        <p>My first idea for this study was a simple mobile app that aids accessibility. What a
-          compassionate idea, I thought. I proposed to the professor, was told to come back and do
-          research on the matter, and was revealed to my own surprise, the impractical of such an
-          innovation. Really, what could a stand-alone app, even if it's a customizable Launcher,
-          gonna do for accessibility that the operating system itself hasn't done? We've seen a lot
-          of user-centered innovation in Android and iOS devices in recent years, especially in the
-          accessibility department. That idea was a miss.
+        <p>My first idea for this study was a simple mobile app that aids accessibility. What a compassionate idea, I thought. I proposed to the professor, was told to come back and do research on the matter, and was revealed to my own surprise, the impractical of such an innovation. Really, what could a stand-alone app, even if it's a customizable Launcher, gonna do for accessibility that the operating system itself hasn't done? We've seen a lot of user-centered innovation in Android and iOS devices in recent years, especially in the accessibility department. That idea was a miss.
         </p>
         <div class="img-frame">
           <img class="img" src="/assets/evernews/apple.webp" width="854" height="558" alt="Apple Design showing its Audio Accessibility features">
@@ -141,8 +150,23 @@
 
     <div class="container">
       <div class="para">
-        <h6>Final Idea</h6>
-        <p>I was almost halfway through the semester, and I hadn't defined an actual problem. That, my friend, was when I learned from my mistake. I was trying to Define a problem instead of actually trying to empathize with the users first. Then came my final idea, well, at the time, it was just something related to news and biases. I wanted to keep it broadly that way. It was high time that I created a proper <b>user survey</b>.
+        <h6>Taking a step back</h6>
+        <p>I was almost halfway through the semester, and I hadn't defined an actual problem. That, my friend, was when I learned from my mistake. I was trying to come up with a problem instead of actually empathize from a real issue in the real world. So I laid back and looked at the normal things around me...
+        </p>
+      </div>
+    </div>
+
+    <div class="container new-chap" id="research">
+      <h3>— Research —</h3>
+    </div>
+    
+    <div class="container">
+      <div class="para">
+        <p>One day, while scrolling through my social media feeds, I stumbled upon a news article about a political event in Vietnam. As I read through the article, I couldn't help but feel that the information presented was <b>biased toward a certain political party</b>. It left me feeling fazed and curious. Realizing that I couldn't be the only one encountering this issue, I went out and sought answers.</p>
+      </div>
+      <div class="para">
+        <h6>User Survey</h6>
+        <p>I conducted a user survey with the hope of gaining a better understanding of the <b>demographics</b> and the <b>affected user group</b>. I also wanted to know how people perceive the problem and their views on <b>the role of the media in shaping public opinion.</b>
         </p>
         <img class="img" src="https://lh4.googleusercontent.com/N4gBAvIznFlTeYzjatQydSUeoMmqosSkdn6kqxqvjsIGtfbyl0US5BsTpAnUTRk9rRjQ_nNsbbyd7kTI5QZ3agrgM4-pGtyLmRYeOOVjqMLyAfXu6L_XlBw86_KzRDy-JLnwwqRQYE4Wgz-ky0ZQPixy4v8RYA2YiugjmrgL5GCN7NHwNdHzx4a6IHEQAw" width="854" height="359" alt="survey results for 'where do you go to university?': 43.8% are from the US, 46.9% are from Vietnam">
         <img class="img" src="https://lh5.googleusercontent.com/im0CKO0EGOkb6wjIKulT2qyxBiuneGvg9szSCBXTDmsg86-eYktYYdbebDTYVYqGYR1l_iSm-wJlMOUL3vXBECcY8ki8L9nbNFlV63qqQfzZABg1B3xrYBnPG-5E5UxxNWzWPQVWUUK98RzvPlghVu7oXqlA9FAclX_nCbh5yXbtJfqEswkVWsKoamxgfQ" width="854" height="359" alt="survey results for 'how often do you read/watch online articles?': 54.1% said everyday">
@@ -150,19 +174,14 @@
         <img class="img" src="https://lh3.googleusercontent.com/d0Quq-5pZuAtO6ofUDMTXWIcM3M1Z5N8tHQ1FlFlvjuIXFvg9lENTMTTVyi7mPd-JEALKUY5enrSsMVDr4DZEdpn8o0ysTWWi8a9DN3TLfzomvhGm6VKsdOxNmqf4-CtfuDus8rkudKXLmOBd-2UoeRUWvVwY1p5EYW1N5ZspD0fb9GRuK-o4GJP32MH7A" width="854" height="359" alt="survey results for 'what device would you normally use for online news reading?': 67.6% use mobile phones, 29.7% use laptop/desktop">
         <img class="img" src="/assets/evernews/chart.webp" width="854" height="450" alt="survey results for 'would you rather that everyone has access to every source or information on the internet, or should people trust the news that are given to them by the government?': 37.8% wanted access to every source on the internet, 0% fully trust the news from their government">
       </div>
-      <div class="para">
-        <p>I finally nailed down a final prompt: <b>A bias-checker news outlet prioritizing the stories from Vietnamese</b>. I chose Vietnam, my hometown, because of the country's governmental Authoritative nature. I was ready to carry on the next step.</p>
-      </div>
-    </div>
-
-    <div class="container new-chap">
-      <h3>— Define —</h3>
+      <p>It was clear that people would prefer to have access to different sources of information across the wide web.
+      </p>
     </div>
 
     <div class="container">
       <div class="para">
-        <h6>Stories Research</h6>
-        <p>I forced myself to read and compare different sources of news on the same event. That way I could really pin down the content and metrics that would be used in my app. I worked through more than a dozen stories, but I will show here one example.</p>
+        <h6>Stories (Qualitative) Research</h6>
+        <p>By comparing different sources of news on the same event, I could pin down the true differences across news agencies and bias metrics that would be used in my app. I worked through more than a dozen stories, but I will show here one example.</p>
       </div>
       <div class="para">
         <h6>The Visit of General Secretary of Vietnam to China</h6>
@@ -172,11 +191,13 @@
       </div>
       <div class="para">
         <p>
-          I found two articles that reported on this story. One was by <a href="https://vnexpress.net/chuyen-tham-trung-quoc-cua-tong-bi-thu-nguyen-phu-trong-thanh-cong-moi-mat-4531117.html" target="_blank">VnExpress</a>, a government-owned news source from Vietnam (top), and the other was by <a href="https://www.bbc.com/vietnamese/articles/cpr71xej2j9o" target="_blank">BBC News Vietnam</a>, an Overseas Vietnamese news outlet that was owned by the British Broadcasting Corporation (bottom). There are some key differences:
+          I found two articles that reported on this story. One was by <a href="https://vnexpress.net/chuyen-tham-trung-quoc-cua-tong-bi-thu-nguyen-phu-trong-thanh-cong-moi-mat-4531117.html" target="_blank"><b>VnExpress</b></a>, a government-owned news source from Vietnam (top), and the other was by <a href="https://www.bbc.com/vietnamese/articles/cpr71xej2j9o" target="_blank"><b>BBC News Vietnam</b></a>, an Overseas Vietnamese news outlet that was owned by the British Broadcasting Corporation (bottom). There are some key differences:
         </p>
         <ul>
-          <li> The Vietnamese article talked highly in favor of the outcome of the visit on 11/01. VnExpress stated directly in its title that the visit was a “success in every way.” The similarities between much Vietnamese news and media were that they included a lot of numbers (it felt like KPI in a sense) when talking about the “win points” from the General Secretary's visit to China. Whereas for the BBC one, the arthor kept his tone in a neutral manner. Information was provided, but never accompanied with "framing attributes" like "win points" or "great success".
-          <li> The VnExpress writing held accountability for their opinion on the subject. Their tone was assertive and absolute. Whereas in the BBC writing, every quote and comments was put inside quotation marks. There weren't any direct viewpoint provided by the BBC author. The external sources being used in the Overseas News paper were also more diverse (taken from worldwide authors and experts), whereas the Vietnamese news only included remarks by local specialists.
+          <li>Vietnamese news outlets such as VnExpress often use <b>strong, assertive language</b> in their reporting, with direct statements about the success of events.
+          <li>Vietnamese news articles frequently use <b>numbers and "win points"</b> to emphasize positive outcomes, which can suggest bias.
+          <li>In contrast, BBC articles tend to have a more <b>neutral tone</b> and include <b>multiple perspectives</b>, with quotes and comments presented in quotation marks.
+          <li>The BBC uses a <b>wider range of external sources</b>, including experts and authors from around the world, while Vietnamese news sources primarily rely on local specialists.
         </ul>
       </div>
     </div>
@@ -184,7 +205,7 @@
     <div class="container">
       <div class="para">
         <h6>Finding</h6>
-        <p>I came up with a few key metrics and their corresponding differences in Native Vietnamese news and Overseas news.</p>
+        <p>I came up with a few <b>key metrics</b> and their corresponding differences between Native Vietnamese news and Overseas news.</p>
         <table class="styled-table">
           <thead>
             <tr>
@@ -198,13 +219,13 @@
               <td>Tones</td>
               <td>
                 <ul>
-                  <li>Direct praise towards Vietnamese government or governmental activities</li>
+                  <li>Direct praise towards governmental activities</li>
                 </ul>
               </td>
               <td>
                 <ul>
                   <li>Neutral</li>
-                  <li>Do not own any opinion or comments (will say “the Vietnamese articles claim this and that” if it's related to the country's government)</li>
+                  <li>Do not own any opinion or comments</li>
                 </ul>
               </td>
             </tr>
@@ -212,15 +233,12 @@
               <td>Word Choices</td>
               <td>
                 <ul>
-                  <li>“We did this and that”
-                  <li>Refer to the authorities as [POSITION] [NAME]<br>ex: General Secretary Nguyen Phu Trong
+                  <li>Written in first person
                 </ul>
               </td>
               <td>
                 <ul>
-                  <li>“They did this and that”
-                  <li>Refer to the authorities as [POSITION] of Vietnam [NAME]
-                    <br>ex: General Secretary of Vietnam Nguyen Phu Trong or Vietnamese General Secretary Nguyen Phu Trong
+                  <li>Written in third person
                 </ul>
               </td>
             </tr>
@@ -233,8 +251,8 @@
               </td>
               <td>
                 <ul>
-                  <li>Worldwide authors and specialists (mostly those from outside Vietnam)
-                  <li>Willing to include social media users with comments appeared to be against the Vietnamese Party ideology
+                  <li>Worldwide authors and specialists
+                  <li>Willing to include social media comments appeared to be against the Vietnamese Party ideology
                 </ul>
               </td>
             </tr>
@@ -242,14 +260,13 @@
               <td>Content</td>
               <td>
                 <ul>
-                  <li>Cases against Vietnamese authorities will be discussed lightly (showing the smaller picture, not giving every piece of information)
-                  <li>Never mention the poor decisions of the Vietnamese government in the past.
+                  <li>Cases against Vietnamese authorities will be discussed lightly
                 </ul>
               </td>
               <td>
                 <ul>
-                  <li>Provided adequate information about a case (will have extra data like the accused's full bio)
-                  <li>Allows opinions, comments, and criticism of experts towards the Vietnamese government and their (past) activities.
+                  <li>Provided adequate information about a case
+                  <li>Allows opinions, comments, and criticism of experts towards the governmental activities
                 </ul>
               </td>
             </tr>
@@ -257,12 +274,12 @@
               <td>Reporters</td>
               <td>
                 <ul>
-                  <li>Include reporters/authors' names
+                  <li>Include reporters/ authors' names
                 </ul>
               </td>
               <td>
                 <ul>
-                  <li>If it's an Oversesas Vietnamese news outlet, the authors are often anonymous. There's a reporter's name only when that (Vietnamese) person is reporting from a country outside Vietnam.
+                  <li>If it's an Oversesas Vietnamese news outlet, the authors are often anonymous
                 </ul>
               </td>
             </tr>
@@ -271,21 +288,94 @@
       </div>
     </div>
 
-    <div class="container new-chap">
-      <h3>— Mockups —</h3>
+    <div class="container new-chap" id="proposal">
+      <h3>— Proposal —</h3>
     </div>
 
     <div class="container">
       <div class="para">
-        <h6>Screens</h6>
-        <p>I don't want to get into too much detail with this part because the ideation step was fairly quick considering I'd had every design guideline I needed. Here are the outcome of the product. Enjoy!</p>
+        <h6>Final Idea</h6>
+        <p>I came up with the idea for a bias-checker news outlet that would provide objective, balanced reporting on current events in Vietnam. I wanted to create a platform where readers would have the freedom to read and filter from various news sources on their interested stories.</p>
+      </div>
+      <div class="para">
+        <h6>Deliverable</h6>
+        <ul>
+          <li>The survey showed that most people read news on their phones, so that was the route I took.
+          <li>I want to showcase my design by telling a story of a news reader who becomes aware of biases in news articles as he explores various sources for a story.
+        </ul>
+      </div>
+    </div>
+
+    <div class="container new-chap" id="story">
+      <h3>— User Story —</h3>
+    </div>
+
+    <div class="container">
+      <p>One beautiful morning, Jeffrey opens the Ever News app to check for popular stories around the world.</p>
+      <div class="two-columns">
+        <div class="para">
+          <h2>01.</h2>
+          <h6>Picking a story</h6>
+          <p>Jeffrey sees a list of articles on current popular events. He chooses one about a political event that he's interested in.</p>
+        </div>
+        <video autoplay="autoplay" width="100%" loop="true">
+          <source src="/assets/evernews/clip1.mov"/>
+        </video>
+      </div>
+      <div class="two-columns">
+        <div class="para">
+          <h2>02.</h2>
+          <h6>Checking the Bias Meter</h6>
+          <p>As he begins to read, he feels perplexed by the language and framing used in the article. He opens the comment section to see what the people are saying. He clicks on the bias metrics feature and sees that the article has been rated as having a high level of bias in favor of one political party. <b>He makes a mental note to keep this in mind while reading.</b></p>
+        </div>
+        <video autoplay="autoplay" width="100%" loop="true">
+          <source src="/assets/evernews/clip2.mov"/>
+        </video>
+      </div>
+      <div class="two-columns">
+        <div class="para">
+          <h2>03.</h2>
+          <h6>Picking another source</h6>
+          <p>Jeffrey decides to look for an article on the same topic from an international news source. He finds one from the Diplomat. As he reads, he notices the more neutral tone and inclusion of multiple perspectives in the article, which helps him gain a <b>better understanding of the potential different viewpoints on the issue.</b></p>
+          <p>Feeling more informed, Jeffrey decides to share his experience with the app with his Vietnamese friends and family back home.</p>
+        </div>
+        <video autoplay="autoplay" width="100%" loop="true">
+          <source src="/assets/evernews/clip3.mov"/>
+        </video>
+      </div>
+    </div>
+
+    <div class="container new-chap" id="details">
+      <h3>— Design Details —</h3>
+    </div>
+
+    <div class="container-wide">
+      <div class="para">
+        <h6>Sketches</h6>
+        <p>When sketching, I want to draw out the main flow of the app in order to get quick feedback from the professor.</p>
+        <img class="img" src="/assets/evernews/sketches.webp" width="1299" height="600" alt="wireframe sketches of the Ever News app">
+      </div>
+      <div class="para">
+        <h6>Mood and Visual</h6>
+        <p>To give users a sense of trust, I want a color palette that creates a sense of <b>seriousness and authority</b> while also adding a touch of warmth and vibrancy.</p>
+        <ul>
+          <li> The use of white text on a raisin-black background creates a high-contrast design that is easy to read and visually striking.
+          <li>The addition of crimson brown adds depth and complexity to the color scheme, helping to create a sense of depth and richness.</li>
+        </ul>
+        <img class="img" src="/assets/evernews/mood.webp" width="1299" height="600" alt="wireframe sketches of the Ever News app">
       </div>
     </div>
 
     <div class="container-wide">
-      <img class="img" src="/assets/evernews/sketches.webp" width="1299" height="962" alt="wireframe sketches of the Ever News app">
-      <img class="img" src="/assets/evernews/Dribble Shot-2.webp" width="1299" height="813" alt="high-fidelity mockup of the homescreen">
-      <img class="img" src="/assets/evernews/Dribble Shot-3.webp" width="1299" height="813" alt="high-fidelity mockups of the Learn screen and the Saved screen">
+      <div class="para">
+        <h6>Design Choices</h6>
+        <ul>
+          <li>Hard corners and edges design gives the app a sense of righteousness and straightforwardness.</li>
+          <li>Horizontally-scroll news articles for ease of navigation and comprehension.</li>
+        </ul>
+      </div>
+      <img class="img" src="/assets/evernews/Dribble Shot-2.webp" width="1299" height="700" alt="high-fidelity mockup of the homescreen">
+      <img class="img" src="/assets/evernews/Dribble Shot-3.webp" width="1299" height="700" alt="high-fidelity mockups of the Learn screen and the Saved screen">
     </div>
 
     <div class="container">
@@ -298,14 +388,14 @@
       </div>
     </div>
 
-    <div class="container new-chap">
+    <div class="container new-chap" id="summary">
       <h3>— Summary —</h3>
     </div>
 
     <div class="container">
       <div class="para">
         <h6>Outcome</h6>
-        <p>I finished the final design just in time for the semester-end Design Expo. A lot of people showed up and display interest in my project, both students and professors. At the end of that day I also received the <b>"Most Likely to Make a Social Impact"</b> prize from the event. It wasn't much but I was proud of my achievement.</p>
+        <p>I finished the final design just in time for the semester-end Design Expo. A lot of people showed up and displayed interest in my project, both students and professors. At the end of that day, I also received the <b>"Most Likely to Make a Social Impact"</b> prize from the event. It wasn't much, but I was proud of my achievement.</p>
         <img class="img" src="https://ik.imagekit.io/cuongnguyen/prize.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1674102010195" width="854" height="700px" alt="me receiving my award at the expo">
       </div>
     </div>

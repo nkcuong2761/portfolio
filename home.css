@@ -2,6 +2,7 @@
 html {
   font-size: 100%;
   scroll-behavior: smooth;
+  scroll-padding-top: 40px;
   --margin: 120px;
   --gutter: 36px;
   --black: #1B1716;
@@ -67,7 +68,7 @@ p, ul, li, tr, th, td {
   margin: 0;
   padding: 0;
   color: var(--black);
-  font-weight: 400;
+  font-weight: 350;
   line-height: 160%;
 }
 ul li {

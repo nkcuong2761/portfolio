@@ -13,6 +13,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <script src="/script.js" defer></script>
+  <script src="/works/outlines.js" defer></script>
 </head>
 <body>
 <div id="loader">
@@ -25,7 +26,7 @@
   <a href="#footer"><h5>Contact</h5></a>
 </div>
 <div class="root">
-  <header>
+  <header id="header">
     <nav class="wrapper-grid">
       <div class="nav-container start" >
         <a href="/about.html"><h5>About</h5></a>
@@ -45,13 +46,25 @@
     </nav>
   </header>
 
+  <div class="side-bar">
+    <a href="#overview" id="outline-overview">Overview</a>
+    <a href="#empathize" id="outline-empathize">Empathize</a>
+    <a href="#define" id="outline-define">Define</a>
+    <a href="#ideate" id="outline-ideate">Ideate</a>
+    <a href="#summary" id="outline-summary">Summary</a>
+    <a href="#header" id="back-to-top">
+      Back to Top
+      <img src="/assets/icons/arrow-up.svg"/>
+    </a>
+  </div>
+
   <section class="work-showcase">
-    <div class="container">
+    <div class="container opening">
       <div class="title">
         <h1>Pizza 4P's Restaurant</h1>
         <h2>Case Study, Web Design, Mobile Design</h2>
       </div>
-      <div class="para">
+      <div class="para" id="overview">
         <h6>Project Overview</h6>
         <p>This is an attempt to reimagine the famous pizza restaurant chain in Vietnam - Pizza 4P's. As a frequent customer I knew that the restaurant lack an online, user-centered service. This prompted me to do some research dedicated to create a specialized app and website that allow users to make online order and table reservation.</p>
       </div>
@@ -103,7 +116,7 @@
       </div>
     </div>
 
-    <div class="container new-chap">
+    <div class="container new-chap" id="empathize">
       <h3>— Empathize —</h3>
     </div>
 
@@ -119,7 +132,7 @@
       </div>
     </div>
 
-    <div class="container new-chap">
+    <div class="container new-chap" id="define">
       <h3>— Define —</h3>
     </div>
 
@@ -152,7 +165,7 @@
       </div>
     </div>
 
-    <div class="container new-chap">
+    <div class="container new-chap" id="ideate">
       <h3>— Ideate —</h3>
     </div>
 
@@ -234,7 +247,7 @@
       </div>
     </div>
 
-    <div class="container new-chap">
+    <div class="container new-chap" id="summary">
       <h3>— Summary —</h3>
     </div>
 
