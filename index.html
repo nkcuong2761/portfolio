@@ -15,6 +15,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" defer></script>
   <script src="script.js" defer></script>
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.437/build/spline-viewer.js"></script>
 </head>
 <body>
 <div id="loader">
@@ -83,7 +84,9 @@
     <div class="hero-hustle">
       <div>
         <h6>Most Recent Hustle</h6>
-        <img src="/assets/fox.webp" width="246" height="161" alt="Fox 3D modelling in Blender">
+        <div style="width: 246px; height: 161px; border-radius: 12px; overflow: hidden;">
+          <spline-viewer loading-anim url="https://prod.spline.design/Ek1lbo6OAVG3qxhg/scene.splinecode"></spline-viewer>
+        </div>
       </div>
     </div>
     <div class="hero-achievement">
