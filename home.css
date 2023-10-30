@@ -15,6 +15,8 @@ html {
 body {
   background-color: white;
   font-family: 'Sora', sans-serif;
+  width: 100vw;
+  overflow-x: hidden;
 }
 .button, .nav-logo, footer #logo, .link-icon, a, svg {
   transition: 0.2s;
@@ -24,7 +26,7 @@ body {
   position: fixed;
   width: 100%;
   height: 100vh;
-  z-index: 11;
+  z-index: 50;
   overflow: visible;
   background: white;
   margin: -9px;
@@ -91,11 +93,110 @@ html {
   margin: 0 auto;
   max-width: 1980px;
 }
-.root {
+
+/* BG ELEMENTS */
+#container {
+  position: relative;
+  width: 100%;
+}
+#space {
+  margin-top: -8px;
+  position: relative;
+}
+.scr-bg {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/assets/paper.jpg");
+  background-size: cover;
+}
+canvas#portrait {
+  position: fixed;
+  z-index: 10;
+  right: 60%;
+  top: 50%;
+  transform: translate(50%, -50%);
+  mix-blend-mode: multiply;
+}
+.scr-flower {
+  position:fixed;
+}
+.scr-flower.bl1 {
+  bottom: -15%;
+  left:-20%;
+  rotate: 5deg;
+  filter: blur(2px);
+  transform-origin: bottom left;
+}
+.scr-flower.bl2 {
+  bottom: -10%;
+  left:-15%;
+  rotate: 25deg;
+  z-index: 11;
+  transform-origin: bottom left;
+}
+.scr-flower.br1 {
+  bottom: -10%;
+  right:-30%;
+  rotate: -20deg;
+  z-index: 11;
+  transform-origin: bottom right;
+}
+.scr-flower.br2 {
+  bottom: -10%;
+  right:-25%;
+  rotate: -5deg;
+  scale: 0.7;
+  filter: blur(2px);
+  transform-origin: bottom right;
+}
+.scr-flower.tl {
+  top: -8%;
+  left:-10%;
+  rotate: -30deg;
+  filter: blur(1px);
+  transform-origin: top left;
+}
+.scr-flower.tr {
+  top: -10%;
+  right:-15%;
+  rotate: 30deg;
+  filter: blur(0.5px);
+  transform-origin: top right;
+}
+.scr-ripped {
+  position: sticky;
+  width: 100%;
+  overflow: hidden;
+  margin-left: -8px;
+  height: 400px;
+  position: relative;
+} .scr-ripped img {
+  position: absolute;
+} .scr-ripped #r5 {
+  bottom: -40%;
+  z-index: 20;
+} .scr-ripped #r6 {
+  bottom: -20%;
+  z-index: 21;
+} .scr-ripped #r7 {
+  bottom: 0;
+  z-index: 22;
+}
+
+#root {
   gap: var(--gutter);
   display: flex;
   flex-direction: column;
   max-width: 1980px;
+  background-color: #FAFAF8;
+  margin-left: -8px;
+  margin-right: -8px;
+  /* margin-top: -300px; */
+  overflow: hidden;
+  z-index: 19;
+  width: 100%;
+  position: relative;
 }
 
 /* HEADER */
@@ -106,6 +207,7 @@ ul, li {
   font-style: normal;
 }
 header {
+  position: fixed;
   align-self: stretch;
   display: flex;
   height: 60px;
