@@ -17,7 +17,7 @@ $(sideBar).children().each((i, element) => {
     const sectionId = $(this).attr('href')
     const section = document.querySelector(sectionId)
     $('html, body').animate({
-      scrollTop: section.offsetTop
+      scrollTop: section.offsetTop - 50
     }, 0)
   })
 });
@@ -26,12 +26,16 @@ let currentView = null
 
 document.addEventListener('scroll', function() {
    for (const item of sections) {
+    if ($(item).attr('id')=='header') {
+      continue
+    }
     if (isInViewport(item)) {
       if (currentView != item) {
         $(currentView).removeClass('in-view')
       }
       currentView = document.querySelector('#outline-'+item.id)
       $(currentView).addClass('in-view')
+      // console.log('#outline-'+item.id)
     }
    }
 })

@@ -11,16 +11,14 @@
   <link rel="icon" href="/assets/icons/logo-fill.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="home.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" defer></script>
-  <!-- <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.437/build/spline-viewer.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/PixiPlugin.min.js"></script> -->
   <script src="script.js" defer></script>
+  <script src="home-script.js" defer></script>
 </head>
 
 <!-- BODY -->
@@ -34,26 +32,26 @@
 <!-- HAMBURGER MENU -->
 <div id="dropdown-menu">
   <a href="/about.html" aria-label="About"><h5>About</h5></a>
-  <a href="/assets/resume-Cuong-Nguyen.pdf" target="_blank" aria-label="Résume"><h5>Résume</h5></a>
   <a href="/etc.html" aria-label="Etc."><h5>Etc.</h5></a>
+  <a href="/assets/resume-Cuong-Nguyen.pdf" target="_blank" aria-label="Résume"><h5>Résume</h5></a>
   <a href="#footer" aria-label="Contact"><h5>Contact</h5></a>
 </div>
 
 <!-- HEADER MENU -->
-<header>
+<header id="header">
   <nav class="wrapper-grid">
     <div class="nav-container start" >
       <a href="/about.html" aria-label="About"><h5>About</h5></a>
-      <a href="/assets/resume-Cuong-Nguyen.pdf" target="_blank" aria-label="Résume"><h5>Résume</h5></a>
+      <a href="/etc.html" aria-label="Etc."><h5>Etc.</h5></a>
     </div>
     <a href="/index.html" aria-label="Home">
       <svg width="61" height="61" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M9.66055 48.6163C9.09731 48.1341 8.55079 47.6272 8.02236 47.096C2.85017 41.8966 0 34.9721 0 27.5966C0 23.9725 0.712599 20.3839 2.09711 17.0357C3.48162 13.6875 5.51092 10.6452 8.06915 8.08263C10.6274 5.52005 13.6644 3.48733 17.0069 2.10054C20.3494 0.713745 23.9318 4.0053e-05 27.5496 0.000173155C33.7262 -0.0218481 39.7273 2.05716 44.5707 5.8969C44.8795 6.14074 45.1826 6.39072 45.4798 6.64663C45.5018 6.6653 45.5236 6.684 45.5455 6.70272C45.5808 6.73266 45.616 6.76268 45.6511 6.79278C45.721 6.85196 45.7905 6.91147 45.8597 6.9713C45.943 7.04179 46.0258 7.11275 46.1082 7.18417C46.1653 7.23264 46.2223 7.28133 46.279 7.33024C46.3261 7.37048 46.3732 7.41087 46.42 7.4514L46.4616 7.48704L46.5011 7.52072C46.5917 7.59719 46.6818 7.67421 46.7714 7.75176C46.8525 7.82057 46.9333 7.88982 47.0136 7.95951C47.0606 7.99946 47.1076 8.03957 47.1543 8.07982L47.175 8.09744C47.2574 8.16699 47.3393 8.23699 47.4209 8.30744C47.459 8.33971 47.4971 8.37206 47.535 8.40452C47.6433 8.49518 47.7509 8.58662 47.8577 8.67882C47.9762 8.77903 48.0939 8.88017 48.2106 8.98223C48.2654 9.02914 48.32 9.07624 48.3745 9.12355C48.4215 9.16353 48.4684 9.20366 48.5152 9.24394C48.562 9.28388 48.6087 9.32396 48.6552 9.36419C48.7389 9.43498 48.8221 9.50624 48.9048 9.57796C48.9667 9.63043 49.0283 9.68314 49.0896 9.73611C49.172 9.80569 49.2539 9.87571 49.3353 9.94619C49.386 9.9891 49.4365 10.0322 49.4868 10.0754C49.6632 10.2221 49.8375 10.3708 50.0098 10.5215C50.1066 10.6035 50.2028 10.6861 50.2984 10.7694C50.3529 10.8158 50.4072 10.8624 50.4613 10.9093C50.5298 10.9673 50.5981 11.0257 50.666 11.0844C50.7064 11.1189 50.7466 11.1535 50.7868 11.1883L50.8211 11.2177L50.8767 11.265C50.9564 11.3323 51.0356 11.4 51.1144 11.4681C55.4319 15.1593 58.5206 20.0968 59.9486 25.6178C60.1006 26.215 60.1192 26.8386 60.0028 27.4438C59.8865 28.0491 59.6382 28.6211 59.2757 29.1192C58.9132 29.6172 58.4453 30.0289 57.9056 30.3249C57.3659 30.6208 56.7676 30.7938 56.1534 30.8314L53.7643 30.9781C53.804 31.0114 53.8431 31.0454 53.8815 31.0801L53.9018 31.0973C53.9172 31.1103 53.9324 31.1235 53.9475 31.1368C54.0111 31.1887 54.0732 31.2424 54.1337 31.298C54.1879 31.3412 54.241 31.3858 54.293 31.4317C54.3538 31.4816 54.4132 31.5331 54.4711 31.5864L54.4994 31.6109C54.541 31.6447 54.5819 31.6793 54.6222 31.7147C54.6576 31.7437 54.6926 31.7734 54.7271 31.8035C54.798 31.8612 54.867 31.9212 54.934 31.9834C54.9473 31.9949 54.9606 32.0066 54.9739 32.0183L54.9884 32.0303C55.0019 32.0416 55.0154 32.053 55.0288 32.0644L55.0465 32.0787L55.0732 32.1004C55.0912 32.1151 55.109 32.13 55.1267 32.145C55.2253 32.2229 55.3203 32.3051 55.4115 32.3915C55.4253 32.4037 55.439 32.4159 55.4526 32.4283C55.4808 32.4521 55.5087 32.4763 55.5363 32.5009C55.5562 32.5174 55.576 32.5341 55.5956 32.551C55.6409 32.5872 55.6854 32.6244 55.729 32.6624C55.7473 32.6773 55.7655 32.6923 55.7835 32.7074C55.8727 32.777 55.959 32.8502 56.0422 32.9268C56.0809 32.9601 56.1189 32.994 56.1563 33.0286C56.2119 33.0731 56.2662 33.119 56.3194 33.1663C56.3626 33.202 56.405 33.2386 56.4467 33.2761C56.4794 33.3034 56.5117 33.3312 56.5436 33.3596C56.5694 33.381 56.5949 33.4026 56.6202 33.4246C56.6626 33.459 56.7043 33.4942 56.7454 33.5302C56.814 33.5862 56.8808 33.6444 56.9457 33.7046C56.9889 33.7393 57.0313 33.7748 57.0731 33.8112C57.0889 33.824 57.1046 33.8369 57.1201 33.8499C57.2193 33.9271 57.3148 34.0087 57.4066 34.0945C57.4817 34.1552 57.5548 34.2186 57.6255 34.2844C57.6957 34.3412 57.764 34.4002 57.8304 34.4613C57.8545 34.4806 57.8783 34.5001 57.902 34.5199C58.0109 34.6046 58.1154 34.6946 58.2154 34.7896C58.2301 34.8027 58.2448 34.8159 58.2594 34.8291C58.3243 34.8804 58.3877 34.9336 58.4495 34.9886C58.4963 35.0274 58.5422 35.0673 58.5873 35.1081C58.8452 35.3257 59.0767 35.5744 59.2762 35.8494C59.6386 36.3489 59.8864 36.9224 60.0017 37.529C60.1171 38.1356 60.0972 38.7602 59.9436 39.3582C58.4231 45.2896 54.9753 50.5455 50.1436 54.2971C45.3119 58.0488 39.3712 60.083 33.258 60.0789H33.17C26.5262 60.0579 20.2564 57.7145 15.2944 53.4368L15.2354 53.3863L15.1837 53.3423L15.1294 53.296L15.0384 53.2185C14.9558 53.1486 14.8736 53.0782 14.7918 53.0072C14.6995 52.929 14.6077 52.8501 14.5164 52.7706L14.4971 52.7539C14.4262 52.694 14.3555 52.6337 14.2851 52.573L14.233 52.5284L14.1387 52.4481C14.0582 52.3799 13.978 52.3112 13.8981 52.2421C13.8482 52.1997 13.7984 52.1572 13.7488 52.1145L13.7038 52.0761C13.5492 51.9468 13.3959 51.8157 13.2438 51.6828C13.2017 51.6471 13.1596 51.6113 13.1177 51.5753C12.9629 51.4456 12.8094 51.3139 12.6572 51.1805C12.5907 51.1241 12.5245 51.0673 12.4585 51.0102L12.3898 50.9512C12.2881 50.8655 12.1869 50.7789 12.0863 50.6915C12.0518 50.6623 12.0174 50.6329 11.9831 50.6034C11.9347 50.5624 11.8865 50.5211 11.8384 50.4797C11.797 50.4445 11.7557 50.4091 11.7145 50.3736L11.6594 50.3265C11.6179 50.2913 11.5765 50.256 11.5352 50.2205C11.4089 50.1145 11.2834 50.0071 11.1587 49.8986C10.9842 49.753 10.8113 49.6051 10.64 49.4548C10.6054 49.4252 10.5708 49.3954 10.5363 49.3655C10.4974 49.3325 10.4586 49.2994 10.4198 49.2661C10.3461 49.2035 10.2726 49.1405 10.1995 49.0771L10.1565 49.0406C10.058 48.9576 9.96006 48.8739 9.86259 48.7894C9.795 48.732 9.72765 48.6743 9.66055 48.6163ZM36.7678 28.63C36.7626 28.6254 36.7574 28.6208 36.7522 28.6161C36.7085 28.5795 36.6651 28.5424 36.6221 28.505C36.586 28.4746 36.5501 28.4439 36.5144 28.4129C36.4905 28.3928 36.4667 28.3725 36.4429 28.3522C36.3761 28.2965 36.3101 28.24 36.2448 28.1827C36.151 28.1051 36.0587 28.0258 35.9678 27.9449L35.9571 27.9359C35.8448 27.8442 35.7346 27.75 35.6265 27.6536C35.5791 27.6137 35.5321 27.5735 35.4855 27.5327C35.381 27.4469 35.2784 27.359 35.1775 27.2691C35.1389 27.2366 35.1006 27.2039 35.0625 27.1709C34.9321 27.0643 34.8043 26.9545 34.6794 26.8415C34.6123 26.7859 34.5459 26.7295 34.4802 26.6722L34.4375 26.6359L34.3892 26.5943C34.35 26.5612 34.3109 26.5279 34.2722 26.4942L34.2702 26.4925C34.1646 26.4061 34.0608 26.3175 33.9589 26.2268C33.825 26.1178 33.6939 26.0054 33.5658 25.8897L33.5224 25.8525C33.4891 25.8248 33.4561 25.7968 33.4232 25.7686C32.8448 27.1021 32.0194 28.3213 30.9841 29.3586C29.8093 30.5355 28.4008 31.4417 26.8569 32.023C26.9659 32.1142 27.0734 32.2075 27.1792 32.3029L27.2233 32.3408C27.2923 32.3975 27.3606 32.4549 27.4283 32.5132C27.5429 32.6068 27.6558 32.7027 27.7669 32.8008C27.8134 32.8408 27.8595 32.8812 27.9054 32.922C27.9497 32.9594 27.9937 32.9971 28.0374 33.0352L28.0662 33.0597C28.1504 33.1298 28.2337 33.2012 28.3161 33.2738C28.3761 33.324 28.4356 33.3749 28.4947 33.4265L28.5098 33.4393C28.5845 33.5014 28.6584 33.5645 28.7316 33.6286L28.7908 33.6781C28.8906 33.7601 28.9892 33.8439 29.0865 33.9294C29.1309 33.9664 29.1751 34.0039 29.219 34.0416C30.6777 31.1394 33.4903 29.1081 36.7678 28.63Z" fill="currentColor"/>
-        <path d="M38.7756 30.4038L38.776 30.4038L50.327 31.1133C50.3271 31.1133 50.3272 31.1133 50.3273 31.1133C50.6677 31.1347 50.9992 31.2312 51.2982 31.3958C51.5972 31.5604 51.8564 31.7892 52.057 32.0659C52.2577 32.3425 52.3949 32.6602 52.4589 32.9962C52.5229 33.3322 52.512 33.6782 52.427 34.0095L52.427 34.0096C49.574 45.1423 39.4747 53.3668 27.4669 53.3238H27.466C24.0986 53.32 20.7649 52.6514 17.6555 51.3562C14.5461 50.061 11.722 48.1647 9.3446 45.7754C6.96722 43.3862 5.08318 40.551 3.80022 37.4319C2.51727 34.3128 1.86055 30.9709 1.86764 27.5974V27.5967C1.86764 13.3881 13.3671 1.87051 27.5496 1.87051C39.5265 1.87051 49.5886 10.0838 52.4298 21.1961C52.5131 21.5265 52.5226 21.8712 52.4578 22.2057C52.3929 22.5404 52.2551 22.8565 52.0543 23.1316C51.8535 23.4068 51.5947 23.6341 51.2962 23.7975C50.9978 23.9609 50.667 24.0563 50.3276 24.077L50.3274 24.077L38.776 24.7865L38.776 24.7865C34.8399 25.0288 31.2294 22.4717 30.2709 18.6507C30.2484 18.5596 30.2268 18.4673 30.2062 18.3746C30.2062 18.3745 30.2061 18.3744 30.2061 18.3744L29.1504 13.582C29.1503 13.5817 29.1503 13.5813 29.1502 13.581C29.1126 13.4072 29.0168 13.2514 28.8785 13.1396C28.7399 13.0275 28.5671 12.9662 28.3888 12.9662C28.2106 12.9662 28.0377 13.0275 27.8992 13.1396C27.7609 13.2514 27.6651 13.4072 27.6275 13.5809C27.6274 13.5813 27.6274 13.5816 27.6273 13.582L26.5714 18.3803C26.5714 18.3803 26.5714 18.3804 26.5713 18.3804C26.1724 20.1904 25.2652 21.8484 23.9567 23.1589C22.6483 24.4694 20.9932 25.3778 19.1866 25.7772L14.4016 26.8349C14.4013 26.835 14.4009 26.8351 14.4005 26.8352C14.2267 26.8729 14.0711 26.9691 13.9595 27.1075C13.8477 27.2462 13.7867 27.419 13.7867 27.5972C13.7867 27.7753 13.8477 27.9481 13.9595 28.0868C14.0711 28.2253 14.2267 28.3214 14.4005 28.3592C14.4009 28.3592 14.4013 28.3593 14.4016 28.3594L19.1866 29.4172C20.9932 29.8165 22.6483 30.725 23.9567 32.0355C25.2651 33.346 26.1723 35.0039 26.5713 36.8139C26.5714 36.814 26.5714 36.814 26.5714 36.8141L27.6263 41.6083C27.6263 41.6087 27.6264 41.609 27.6265 41.6094C27.6641 41.7831 27.7599 41.9389 27.8982 42.0507C28.0367 42.1628 28.2095 42.224 28.3878 42.224C28.5661 42.224 28.7389 42.1628 28.8775 42.0507C29.0158 41.9389 29.1116 41.7831 29.1492 41.6094C29.1492 41.609 29.1493 41.6087 29.1494 41.6083L30.2051 36.8149C30.2051 36.8148 30.2052 36.8146 30.2052 36.8145C30.2257 36.7226 30.2473 36.6312 30.27 36.5381C31.2296 32.7173 34.8452 30.1576 38.7756 30.4038Z" fill="white" stroke="currentColor" stroke-width="0.7"/>
+        <path d="M38.7756 30.4038L38.776 30.4038L50.327 31.1133C50.3271 31.1133 50.3272 31.1133 50.3273 31.1133C50.6677 31.1347 50.9992 31.2312 51.2982 31.3958C51.5972 31.5604 51.8564 31.7892 52.057 32.0659C52.2577 32.3425 52.3949 32.6602 52.4589 32.9962C52.5229 33.3322 52.512 33.6782 52.427 34.0095L52.427 34.0096C49.574 45.1423 39.4747 53.3668 27.4669 53.3238H27.466C24.0986 53.32 20.7649 52.6514 17.6555 51.3562C14.5461 50.061 11.722 48.1647 9.3446 45.7754C6.96722 43.3862 5.08318 40.551 3.80022 37.4319C2.51727 34.3128 1.86055 30.9709 1.86764 27.5974V27.5967C1.86764 13.3881 13.3671 1.87051 27.5496 1.87051C39.5265 1.87051 49.5886 10.0838 52.4298 21.1961C52.5131 21.5265 52.5226 21.8712 52.4578 22.2057C52.3929 22.5404 52.2551 22.8565 52.0543 23.1316C51.8535 23.4068 51.5947 23.6341 51.2962 23.7975C50.9978 23.9609 50.667 24.0563 50.3276 24.077L50.3274 24.077L38.776 24.7865L38.776 24.7865C34.8399 25.0288 31.2294 22.4717 30.2709 18.6507C30.2484 18.5596 30.2268 18.4673 30.2062 18.3746C30.2062 18.3745 30.2061 18.3744 30.2061 18.3744L29.1504 13.582C29.1503 13.5817 29.1503 13.5813 29.1502 13.581C29.1126 13.4072 29.0168 13.2514 28.8785 13.1396C28.7399 13.0275 28.5671 12.9662 28.3888 12.9662C28.2106 12.9662 28.0377 13.0275 27.8992 13.1396C27.7609 13.2514 27.6651 13.4072 27.6275 13.5809C27.6274 13.5813 27.6274 13.5816 27.6273 13.582L26.5714 18.3803C26.5714 18.3803 26.5714 18.3804 26.5713 18.3804C26.1724 20.1904 25.2652 21.8484 23.9567 23.1589C22.6483 24.4694 20.9932 25.3778 19.1866 25.7772L14.4016 26.8349C14.4013 26.835 14.4009 26.8351 14.4005 26.8352C14.2267 26.8729 14.0711 26.9691 13.9595 27.1075C13.8477 27.2462 13.7867 27.419 13.7867 27.5972C13.7867 27.7753 13.8477 27.9481 13.9595 28.0868C14.0711 28.2253 14.2267 28.3214 14.4005 28.3592C14.4009 28.3592 14.4013 28.3593 14.4016 28.3594L19.1866 29.4172C20.9932 29.8165 22.6483 30.725 23.9567 32.0355C25.2651 33.346 26.1723 35.0039 26.5713 36.8139C26.5714 36.814 26.5714 36.814 26.5714 36.8141L27.6263 41.6083C27.6263 41.6087 27.6264 41.609 27.6265 41.6094C27.6641 41.7831 27.7599 41.9389 27.8982 42.0507C28.0367 42.1628 28.2095 42.224 28.3878 42.224C28.5661 42.224 28.7389 42.1628 28.8775 42.0507C29.0158 41.9389 29.1116 41.7831 29.1492 41.6094C29.1492 41.609 29.1493 41.6087 29.1494 41.6083L30.2051 36.8149C30.2051 36.8148 30.2052 36.8146 30.2052 36.8145C30.2257 36.7226 30.2473 36.6312 30.27 36.5381C31.2296 32.7173 34.8452 30.1576 38.7756 30.4038Z" fill="#FAFAF8" stroke="currentColor" stroke-width="0.7"/>
       </svg>
     </a>
     <div class="nav-container end">
-      <a href="/etc.html" aria-label="Etc."><h5>Etc.</h5></a>
+      <a href="/assets/resume-Cuong-Nguyen.pdf" target="_blank" aria-label="Résume"><h5>Résume</h5></a>
       <a href="#footer" aria-label="Contact"><h5>Contact</h5></a>
     </div>
     <img src="/assets/icons/menu.svg" id="menu-icon" onclick="openMenu()">
@@ -61,15 +59,38 @@
 </header>
 
 <!-- BACKGROUND ELEMENTS -->
-<section id="space" style="height: 16000px;">
+<lottie-player class="lottie-scroll" src="https://lottie.host/674f7a2f-8ceb-4d3c-912d-3145cbaf65eb/IJaNklPXGj.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+<section id="space" style="height: 9000px;">
   <div class="scr-bg"></div>
   <canvas id="portrait"></canvas>
+  <canvas id="portraitBW"></canvas>
   <object data="/assets/flower-1.png" class="scr-flower bl1"></object>
   <object data="/assets/flower-1.png" class="scr-flower bl2"></object>
   <object data="/assets/flower-2.png" class="scr-flower br2"></object>
   <object data="/assets/flower-2.png" class="scr-flower br1"></object>
   <object data="/assets/flower-3.png" class="scr-flower tl"></object>
   <object data="/assets/flower-4.png" class="scr-flower tr"></object>
+  <object data="/assets/scr-top.png" class="scr-top"></object>
+  <div class="scr-stack">
+    <h1 class="scr-title t1">my</h1>
+    <div class="scr-title t2">
+      <object data="/assets/letters/letter-a.png"></object>
+      <object data="/assets/letters/letter-w.png"></object>
+      <object data="/assets/letters/letter-e.png"></object>
+      <object data="/assets/letters/letter-s.png"></object>
+      <object data="/assets/letters/letter-o.png"></object>
+      <object data="/assets/letters/letter-m.png"></object>
+      <object data="/assets/letters/letter-e2.png"></object>
+    </div>
+    <h1 class="scr-title t3">portfolio</h1>
+    <object data="/assets/divider.png" class="scr-title scr-divider"></object>
+    <p class="scr-title t4">
+      presented by Cuong, a product designer
+    </p>
+  </div>
+  <object data="/assets/scr-stamp.png" class="scr-stamp"></object>
+  <object data="/assets/scr-airplane.png" class="scr-airplane"></object>
+  <object data="/assets/scr-bot.png" class="scr-bot"></object>
 </section>
 <div class="scr-ripped" style="overflow: hidden;">
   <img src="/assets/ripped/5.png" id="r5"/>
@@ -78,67 +99,57 @@
 </div>
 
 <!-- MAIN BODY -->
-<section id="root">
+<section id="root" style="margin-left: -8px;">
 
-  <!-- <div class="hero">
-    <div class="hero-text">
-      <h1>Hello! I'm Cuong.</h1>
-      <h2 id="changingText">I started designing at the age of 15</h2>
-    </div>
-    <div class="hero-intro">
-      <div>
-        <h6>You made it to my portfolio</h6>
-        <p>I'm a Product Designer looking for opportunities in the emerging design industry. My proudest trait is my cross-disciplinary skills in both Design and Software Engineer. I have experience working in prospering tech startups and doing solo Web/App Development projects.</p>
-      </div>
-    </div>
-  </div> -->
-
-  <div class="works" id="work-section">
-    <a class="card-work" style="background: #4B4C4F;" href="/works/evernews.html">
+  <div>
+  <div class="works-big" id="work-section">
+    <a class="card-work" style="background: #CDDFD6;" href="/works/goodhood.html">
       <div class="header">
         <div class="text-frame">
-          <h6 style="color: white;">Ever News</h6>
-          <p style="color: white;">UX Research</p>
+          <h6>GoodHood.SG</h6>
+          <p>(Must read!) Explore how I help reshaping the Singaporean digital neighborhood through a major design revamp</p>
         </div>
         <img src="/assets/icons/open-here.svg" width="48" height="48" alt="open in this tab">
       </div>
-      <img class="img" src="/assets/evernews.webp" alt="Mockups image of the Ever News app">
-    </a>
-    <a class="card-work" style="background: #eaeae9;" href="/works/trekkrs.html">
-      <div class="header">
-        <div class="text-frame">
-          <h6>Trekkrs</h6>
-          <p>UX Design</p>
-        </div>
-        <img src="/assets/icons/open-here.svg" width="48" height="48" alt="open in this tab">
-      </div>
-      <img class="img" src="/assets/trekkrs.webp" alt="mockups image of the Trekkrs website">
+      <img class="img" src="/assets/goodhood.webp" alt="Mockups image of the GoodHood app">
     </a>
     <a class="card-work" style="background: #F2EEEB;" href="/works/pizza4p.html">
       <div class="header">
         <div class="text-frame">
           <h6>Pizza 4P's Restaurant</h6>
-          <p>UX Case Study</p>
+          <p>Get to know about my Design Thinking through this comprehensive personal project</p>
         </div>
         <img src="/assets/icons/open-here.svg" width="48" height="48" alt="open in this tab">
       </div>
       <img class="img" src="/assets/pizza4p.webp" alt="mockups image of the pizza 4p's web/app">
     </a>
+  </div>
+  <div class="works">
     <a class="card-work" style="background: #E7E8E9;" href="works/rsf.html">
       <div class="header">
         <div class="text-frame">
           <h6>Ready Set Fit</h6>
-          <p>UX Design, Fullstack Development</p>
+          <p>Product Design AND Fullstack Development? What 😮?!</p>
         </div>
         <img src="/assets/icons/open-here.svg" width="48" height="48" alt="open in this tab">
       </div>
       <img class="img" src="/assets/rsf.webp" alt="mockups image of the ready set fit app">
     </a>
+    <a class="card-work" style="background: #4B4C4F;" href="/works/evernews.html">
+      <div class="header">
+        <div class="text-frame">
+          <h6 style="color: white;">Ever News</h6>
+          <p style="color: white;">Personal project — not your everyday UX case study</p>
+        </div>
+        <img src="/assets/icons/open-here.svg" width="48" height="48" alt="open in this tab">
+      </div>
+      <img class="img" src="/assets/evernews.webp" alt="Mockups image of the Ever News app">
+    </a>
     <a class="card-work" style="background: #EAEAEB;" href="https://medium.com/@ckn006/wildlife-conservation-society-ux-redesign-901a4cf5646a" target="_blank">
       <div class="header">
         <div class="text-frame">
           <h6>Wildlife Conservation Society</h6>
-          <p>UX Redesign</p>
+          <p>UX & UI Redesign</p>
         </div>
         <img src="/assets/icons/open.svg" width="48" height="48" alt="open in another site">
       </div>
@@ -148,11 +159,21 @@
       <div class="header">
         <div class="text-frame">
           <h6>Social CO2</h6>
-          <p>Software Development</p>
+          <p>Scrum Master + Software Dev</p>
         </div>
         <img src="/assets/icons/open.svg" width="48" height="48" alt="open in another site">
       </div>
       <img class="img" src="/assets/socialco2.webp" alt="mockups image of the social co2 website">
+    </a>
+    <a class="card-work" style="background: #eaeae9;" href="/works/trekkrs.html">
+      <div class="header">
+        <div class="text-frame">
+          <h6>Trekkrs</h6>
+          <p>UI Design</p>
+        </div>
+        <img src="/assets/icons/open-here.svg" width="48" height="48" alt="open in this tab">
+      </div>
+      <img class="img" src="/assets/trekkrs.webp" alt="mockups image of the Trekkrs website">
     </a>
     <a class="card-work etc" href="/etc.html">
       <div class="header">
@@ -165,6 +186,7 @@
       </div>
     </a>
   </div>
+  </div>
 
   <footer id="footer">
     <a href="/index.html" aria-label="home">
@@ -174,7 +196,7 @@
     </a>
     <div class="text-frame">
       <h3 style="color: white">Feel like I would be a great fit to your team?</h3>
-      <p style="color: white">Reach out at <a href="mailto:ckn006@bucknell.edu"><u>ckn006@bucknell.edu</u></a></p>
+      <p style="color: white">Reach out at <a href="mailto:nkcuong2761@gmail.com"><u>nkcuong2761@gmail.com</u></a></p>
     </div>
     <div class="bottom">
       <div class="text">

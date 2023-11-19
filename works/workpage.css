@@ -1,6 +1,9 @@
+footer {
+  margin-left: -8px;
+}
+
 /* ETC PAGE */
 .works .img-only {
-  border-radius: 12px;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -50,6 +53,7 @@
 
 .work-showcase {
   display: grid;
+  padding-top: 156px;
 }
 
 .card-work {
@@ -62,16 +66,7 @@
 table {
   border-spacing: 0px;
   /* border-collapse: separate; */
-  border-radius: 12px;
   border: 1px solid var(--black);
-} table tr:first-child th:first-child {
-  border-top-left-radius: 12px;
-} table tr:first-child th:last-child {
-  border-top-right-radius: 12px;
-} table tr:last-child td:first-child {
-  border-bottom-left-radius: 12px;
-} table tr:last-child td:last-child {
-  border-bottom-right-radius: 12px;
 } th, td {
   padding: 10px;
   border: 1px solid var(--black);
@@ -87,6 +82,11 @@ table {
 
 .iframe {
   align-self: stretch;
+}
+.width-wide {
+  width: 100vw;
+} .width-wide img {
+  width: 100%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -113,7 +113,6 @@ table {
   } .work-showcase .img {
     margin-top: 12px;
     object-fit: cover;
-    border-radius: 12px;
     align-self: stretch;
     width: 100%;
   } .work-showcase .new-chap {
@@ -181,18 +180,25 @@ table {
     object-fit: cover;
     align-self: stretch;
     width: 100%;
-    border-radius: 20px;
   } .work-showcase .container .img {
     object-fit: cover;
     align-self: stretch;
     width: 100%;
-    border-radius: 20px;
     margin-top: 12px;
   } .work-showcase .two-columns {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 60px;
     align-self: stretch;
+  } .work-showcase .three-columns {
+    grid-column: 2 / span 4;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  } .work-showcase .three-columns .para {
+    flex: 1 1 0px;
+  } .work-showcase .three-columns img {
+    height: 510px;
   } .work-showcase .img-frame {
     display: flex;
     align-self: stretch;
