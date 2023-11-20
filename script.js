@@ -49,8 +49,7 @@ ScrollTrigger.create({
 });
 
 // PRELOADER
-document.addEventListener("DOMContentLoaded", function() {
-    // loader = document.getElementById('loader');
-    // loadNow(1);
+$(window).on('load', function(){//or "DOMContentLoaded"
   $('#loader').show().delay(1000).fadeOut(500);
-});
+  console.log("lmao")
+})

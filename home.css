@@ -279,7 +279,7 @@ canvas#portraitBW {
   gap: var(--gutter);
   display: flex;
   flex-direction: column;
-  max-width: 1980px;
+  /* max-width: 1980px; */
   background-color: var(--white);
   /* margin-left: -8px; */
   /* margin-right: -8px; */

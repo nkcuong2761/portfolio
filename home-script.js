@@ -1,9 +1,18 @@
-// FORCE TO SCROLL TO TOP WHEN RELOAD
-history.scrollRestoration = "manual";
-$(document).on('beforeunload', function(){
-  $(this).scrollTop(0);
-  console.log('scroll top');
-});
+// PORTRAIT-2
+const frameCountBW = 3;
+const currentFrameBW = index => (
+  `/assets/png-bw/portrait-${index.toString()}.png`
+);
+const imagesBW = []
+for (let i = 0; i < frameCountBW; i++) {
+  const img = new Image();
+  img.src = currentFrameBW(i);
+  imagesBW.push(img);
+}
+const canvasBW = document.getElementById("portraitBW");
+const contextBW = canvasBW.getContext("2d");
+canvasBW.width = 1080;
+canvasBW.height = 1280;
 
 // ANIMATION SET-UP
 gsap.registerPlugin(ScrollTrigger)
@@ -62,22 +71,6 @@ function render() {
   context.drawImage(images[portrait.frame], 0, 0); 
 }
 
-// PORTRAIT-2
-const canvasBW = document.getElementById("portraitBW");
-const contextBW = canvasBW.getContext("2d");
-canvasBW.width = 1080;
-canvasBW.height = 1280;
-const frameCountBW = 3;
-const currentFrameBW = index => (
-  `/assets/png-bw/portrait-${index.toString()}.png`
-);
-const imagesBW = []
-for (let i = 0; i < frameCountBW; i++) {
-  const img = new Image();
-  img.src = currentFrameBW(i);
-  imagesBW.push(img);
-}
-
 // CALL ANIMATION
 tlStartup
   .from('.bl2', {rotation:"-10deg", x:"-100%"})
@@ -134,6 +127,13 @@ function renderBW() {
 }
 
 images[0].onload = render;
+
+// FORCE TO SCROLL TO TOP WHEN RELOAD
+history.scrollRestoration = "manual";
+$(document).on('beforeunload', function(){
+  $(this).scrollTop(0);
+  console.log('scroll top');
+});
 
 // --------- CHANGING HEADING ---------
 // var heading = $('#changingText')
