@@ -117,7 +117,7 @@ html {
 
 /* BG ELEMENTS */
 .lottie-scroll {
-  position: fixed;
+  position: absolute;
   z-index: 40;
   bottom: 0;
   left: 50%;
@@ -135,7 +135,7 @@ html {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-image: url("/assets/paper.jpg");
+  background-image: url("/assets/paper.webp");
   background-size: cover;
 }
 canvas#portrait {

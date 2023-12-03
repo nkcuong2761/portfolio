@@ -1,18 +1,31 @@
-// PORTRAIT-2
-const frameCountBW = 3;
-const currentFrameBW = index => (
-  `/assets/png-bw/portrait-${index.toString()}.png`
+// PORTRAIT
+const canvas = document.getElementById("portrait");
+const context = canvas.getContext("2d");
+canvas.width = 1080;
+canvas.height = 1280;
+const frameCount = 60;
+const currentFrame = index => (
+  `/assets/portrait/portrait-${index.toString()}.webp`
 );
-const imagesBW = []
-for (let i = 0; i < frameCountBW; i++) {
-  const img = new Image();
-  img.src = currentFrameBW(i);
-  imagesBW.push(img);
+const images = []
+const portrait = {
+  frame: 0
+};
+// Function to preload images
+function preloadImages() {
+  for (let i = 0; i < frameCount; i++) {
+    const img = new Image();
+    img.src = currentFrame(i);
+    images.push(img);
+  }
 }
-const canvasBW = document.getElementById("portraitBW");
-const contextBW = canvasBW.getContext("2d");
-canvasBW.width = 1080;
-canvasBW.height = 1280;
+// Function to render the image
+function render() {
+  context.clearRect(0, 0, canvas.width, canvas.height);
+  context.drawImage(images[portrait.frame], 0, 0); 
+}
+// Preload images before rendering
+preloadImages();
 
 // ANIMATION SET-UP
 gsap.registerPlugin(ScrollTrigger)
@@ -48,28 +61,21 @@ let tlElements = gsap.timeline({
   }
 })
 
-// PORTRAIT
-const canvas = document.getElementById("portrait");
-const context = canvas.getContext("2d");
-canvas.width = 1080;
-canvas.height = 1280;
-const frameCount = 60;
-const currentFrame = index => (
-  `/assets/png/portrait-${index.toString()}.png`
+// PORTRAIT-2
+const frameCountBW = 3;
+const currentFrameBW = index => (
+  `/assets/png-bw/portrait-${index.toString()}.png`
 );
-const images = []
-const portrait = {
-  frame: 0
-};
-for (let i = 0; i < frameCount; i++) {
+const imagesBW = []
+for (let i = 0; i < frameCountBW; i++) {
   const img = new Image();
-  img.src = currentFrame(i);
-  images.push(img);
+  img.src = currentFrameBW(i);
+  imagesBW.push(img);
 }
-function render() {
-  context.clearRect(0, 0, canvas.width, canvas.height);
-  context.drawImage(images[portrait.frame], 0, 0); 
-}
+const canvasBW = document.getElementById("portraitBW");
+const contextBW = canvasBW.getContext("2d");
+canvasBW.width = 1080;
+canvasBW.height = 1280;
 
 // CALL ANIMATION
 tlStartup
@@ -79,7 +85,6 @@ tlStartup
   .from('.br2', {rotation:"10deg", x:"100%"}, '<30%')
   .from('.tl', {rotation:"-60deg", x:"-100%"}, '<40%')
   .from('.tr', {rotation:"60deg", x:"100%"}, '<')
-  .to(".lottie-scroll", {autoAlpha: 0}, '>5')
 
 tl.from('#portrait', {scale:1.5, skewX: 2}, '<')
   .from('#portrait', {y:"-40%"}, "<")
