@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="/script.js" defer></script>
+  <style>
+    body{
+      background-color: #FCF7EE;
+    }
+    .square {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    } .s2, .s5 {
+      z-index: -2;
+    }
+    .por {
+      position: fixed;
+      z-index: -1;
+      left: 50%;
+      transform: translate(-50%, -51%);
+      /* transform: scale(60%); */
+    }
+  </style>
+</head>
+<body>
+  <img src = "/assets/square.svg" alt="red_square" class="square s1"/>
+  <img src = "/assets/square.svg" alt="red_square" class="square s2"/>
+  <img src = "/assets/square.svg" alt="red_square" class="square s3"/>
+  <img src = "/assets/square.svg" alt="red_square" class="square s4"/>
+  <img src = "/assets/square.svg" alt="red_square" class="square s5"/>
+  <img src = "/assets/square.svg" alt="red_square" class="square s6"/>
+  <img src = "/assets/portrait/portrait-59.webp" class="por"/>
+
+  <script>
+    let tl = gsap.timeline();
+    let tl2 = gsap.timeline({
+      ease: 'in'
+    });
+    let tl3 = gsap.timeline({
+      ease: 'back.in'
+    });
+    let tl4 = gsap.timeline();
+    tl.to('.s2', {x:'-49%', y:'-49%', duration: 1, delay: 1})
+      .to('.s3', {x:'-49%', y:'49%', duration: 0.7}, '<50%')
+      .to('.s1', {x:'-16%', duration: 0.5}, '>')
+      .to('.s2', {x:'-65%', duration: 0.5}, '<')
+      .to('.s3', {x:'-65%', duration: 0.5}, '<')
+      .to('.s4', {x:'-16%', duration: 0.5}, '<')
+      .to('.s5', {x:'-16%', duration: 0.5}, '<')
+      .to('.s6', {x:'-16%', duration: 0.5}, '<')
+      .to('.s5', {x:'33%', y:'-49%', duration: 0.5}, '>')
+      .to('.s6', {x:'33%', y:'49%', duration: 0.7}, '<50%')
+
+    // tl2.to('.s1', {scale: '1.2', duration: 1, delay: 4})
+    //   .to('.s2', {scale: '1.2', duration: 1}, '<')
+    //   .to('.s3', {scale: '1.2', duration: 1}, '<')
+    //   .to('.s4', {scale: '1.2', duration: 1}, '<')
+    //   .to('.s5', {scale: '1.2', duration: 1}, '<')
+    //   .to('.s6', {scale: '1.2', duration: 1}, '<')
+      
+    tl3.to('.s1', {x:'-50%', duration: 1, delay: 3.7, ease: 'back.out(4)'})
+      .to('.s2', {x:'-99%', duration: 1, ease: 'back.out(4)'}, '<')
+      .to('.s3', {x:'-99%', duration: 1, ease: 'back.out(4)'}, '<')
+      .to('.s4', {x:'30%', duration: 1, ease: 'back.out(4)'}, '<')
+      .to('.s5', {x:'79%', duration: 1, ease: 'back.out(4)'}, '<')
+      .to('.s6', {x:'79%', duration: 1, ease: 'back.out(4)'}, '<')
+
+    gsap.set('.por', { transformOrigin: 'center bottom' });
+
+    tl4.to('.s1', {x:'99%', duration:1, delay: 4.2, ease: 'back.out'})
+      .to('.s2', {x:'50%', duration:1, ease: 'back.out'}, '<')
+      .to('.s3', {x:'50%', duration:1, ease: 'back.out'}, '<')
+      .to('.s4', {x:'-99%', duration:1, ease: 'back.out'}, '<')
+      .to('.s5', {x:'-50%', duration:1, ease: 'back.out'}, '<')
+      .to('.s6', {x:'-50%', duration:1, ease: 'back.out'}, '<')
+      .from('.por', {opacity: 0, scale:0, duration:0.5}, '>0.1')
+      .to('.por', {opacity: 1, scale:0.6, duration:0.5, ease: 'ease.in'}, '<')
+  </script>
+</body>
+</html>
